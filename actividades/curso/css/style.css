@@ -1,0 +1,65 @@
+body{
+    background-image: url(../imgs/old_map.png);
+}
+
+hr{
+    background-color: grey;
+    height: 1px;
+    width: 80%;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.contenedor__titulo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #1a242c;
+    color: white;
+    padding: 1rem;
+    gap: 20px;
+    border-bottom: 7px solid black;
+}
+
+.contenedor__menu{
+    background-image: url(../imgs/red015.jpg);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: white;
+    align-items: center;
+}
+
+.contenedor__menu__item{
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.contenedor__contenido{
+    background-image: url(../imgs/lgrey008.jpg);
+    display: flex;
+    flex-direction: row;
+    border-bottom: 7px solid black;
+}
+
+.contenedor__contenido__target{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px 20px 50px 20px;
+    background-color: white;
+    width: auto;
+}
+
+.contenedor__footer{
+    background-color: #1a242c;
+    color: white;
+    text-align: center;
+
+}
