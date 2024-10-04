@@ -1,5 +1,6 @@
 body{
     background-image: url(../imgs/old_map.png);
+    padding: 15px;
 }
 
 hr{
@@ -11,19 +12,18 @@ hr{
 .contenedor{
     display: flex;
     flex-direction: column;
-    margin: 15px;
 }
 
 .contenedor__titulo{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
     background-color: #1a242c;
     color: white;
     padding: 1rem;
-    gap: 20px;
     border-bottom: 7px solid black;
+    background-image: url(../imgs/logo.png);
+    background-repeat: no-repeat;
+    background-position-x: 5%;
+    background-position-y: 50%;
+    padding-left: 13%;
 }
 
 .contenedor__menu{
@@ -36,8 +36,22 @@ hr{
 }
 
 .contenedor__menu__item{
-    text-align: center;
     margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+}
+
+.contenedor__menu__item__enlace{
+    text-align: center;
+    text-decoration: none;
+    color: yellow;    
+}
+
+.contenedor__menu__item__enlace:hover{
+    color: white;    
 }
 
 .contenedor__contenido{
