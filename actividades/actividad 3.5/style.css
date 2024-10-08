@@ -1,0 +1,96 @@
+body{
+    background-color: cadetblue;
+}
+
+.general{
+    width: 30%;
+    background-color: white;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.bloque1{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.caja1{
+    border: 1px solid black;
+    border-radius: 17px 19px 7px 40px;
+    padding: 0px 40px;
+}
+
+.caja2{
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 0px 40px;
+}
+
+.caja3{
+    border: 1px solid black;
+    padding: 0px 40px;
+    border-radius: 30px;
+    background: linear-gradient(white, cadetblue);
+}
+
+.caja4{
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 0px 40px;
+    background: radial-gradient(white, cadetblue);
+
+}
+
+.caja5{
+    border: 1px solid black;
+    padding: 0px 40px;
+    border-radius: 30px;
+}
+
+.caja6{
+    border: 1px solid black;
+    padding: 0px 40px;
+}
+
+
+.bloque2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.caja7{
+    border: 1px solid;
+    padding: 0px 40px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px cadetblue;
+}
+
+.caja8{
+    border: 1px solid black;
+    padding: 0px 40px;
+    border-radius: 30px;
+}
+
+.caja9{
+    border: 1px solid black;
+    padding: 0px 40px;
+    border-radius: 30px;
+    text-shadow: 5px 3px 3px cadetblue;
+
+}
+
+.caja10{
+    border: 1px solid black;
+    padding: 0px 40px;
+    border-radius: 30px;
+
+    background: linear-gradient(45deg, white, cadetblue 70%);
+
+}
