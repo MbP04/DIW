@@ -1,12 +1,21 @@
 body{
-    background-image: url(../imgs/old_map.png);
+    background: linear-gradient(rgb(206, 43, 2), rgb(255, 255, 255));
     padding: 15px;
 }
 
 hr{
-    background-color: grey;
+    background-color: rgb(0, 0, 0);
     height: 1px;
     width: 80%;
+}
+
+h1{
+    background-image: url(../imgs/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 5%;
+    background-position-y: 50%;
+    padding-left: 13%;
 }
 
 .contenedor{
@@ -15,19 +24,16 @@ hr{
 }
 
 header{
-    background-color: #1a242c;
+    background: linear-gradient(rgb(0, 88, 160), rgb(46, 144, 224));
+    border-radius: 25px 25px 0 0;
     color: white;
     padding: 1rem;
     border-bottom: 7px solid black;
-    background-image: url(../imgs/logo.png);
-    background-repeat: no-repeat;
-    background-position-x: 5%;
-    background-position-y: 50%;
-    padding-left: 13%;
+    
 }
 
 nav{
-    background-image: url(../imgs/red015.jpg);
+    background-color: rgb(212, 212, 8);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -49,32 +55,39 @@ nav{
     text-decoration: none;
     color: yellow;    
 }
-
+/*
 .contenedor__menu__item__enlace:hover{
     color: white;    
-}
+} */
 
 main{
-    background-image: url(../imgs/lgrey008.jpg);
+    background-color: white;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     border-bottom: 7px solid black;
+    width: auto;
+
 }
 
 article{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    text-align: center;
+    border: 60px solid;
     margin: 20px 20px 50px 20px;
-    padding: 10px;
-    background-color: white;
-    width: auto;
+    border-image: url(../imgs/movil.png) 80 40 70 40;
+    text-align: center;
+    min-width: au;
+    
+
 }
 
 footer{
-    background-color: #1a242c;
+    background: linear-gradient(360deg, rgb(0, 88, 160), rgb(30, 128, 207));
+    border-radius: 0px 0px 25px 25px ;
     color: white;
     text-align: center;
-
 }
