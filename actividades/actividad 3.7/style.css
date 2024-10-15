@@ -1,0 +1,50 @@
+/* menu */
+* {
+    margin:0;
+    padding:0;
+}
+   
+/* items del menu */
+ul li {
+ background-color:black;
+}
+
+/* efecto al pasar el ratón por los items del menu */
+/* #menu ul li:hover {
+    background:#5b78a7;
+} */
+
+/* enlaces del menu */
+ul a {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    padding:10px;
+}
+
+/* items del menu */
+ul li {
+ position:relative;
+ float:left;
+ margin:0;
+ padding:0;
+}
+
+ul ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    padding:0;
+}
+
+/* items del menu desplegable */
+ul ul li {
+    float:none;
+    width:150px
+}
+
+/* items del menu desplegable al pasar el ratón */
+ul li:hover > ul {
+    display:block;
+}
