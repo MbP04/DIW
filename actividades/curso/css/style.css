@@ -12,12 +12,6 @@ hr{
 header > h1{
     position: relative;
     margin-left: 100px;
-    /* background-image: url(../imgs/logo.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position-x: 5%;
-    background-position-y: 50%;
-    padding-left: 13%; */
 }
 h1 > img{
     position: absolute;
@@ -61,10 +55,7 @@ nav{
     text-decoration: none;
     color: yellow;    
 }
-/*
-.contenedor__menu__item__enlace:hover{
-    color: white;    
-} */
+
 
 main{
     background-color: white;
@@ -87,9 +78,41 @@ article{
     border-image: url(../imgs/movil.png) 80 40 70 40;
     text-align: center;
     min-width: au;
-    
-
 }
+
+
+article > h4{
+    position: relative;
+}
+
+.cincheta{
+    position: absolute;
+    top: -286px;
+    width: 35px;
+    height: 49x;
+}
+
+main article:first-of-type .cincheta img {
+    position: absolute;
+    left: 120px;
+}
+
+main article:last-of-type .cincheta img {
+    position: absolute;
+    right: 30px;
+    transform: rotate(2deg);
+}
+
+main article:first-of-type  {
+    transform: rotate(-2deg);
+}
+
+main article:last-of-type  {
+    transform: rotate(2deg);
+}
+
+
+
 
 footer{
     background: linear-gradient(360deg, rgb(0, 88, 160), rgb(30, 128, 207));
