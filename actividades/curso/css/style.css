@@ -100,7 +100,6 @@ main article:first-of-type .cincheta img {
 main article:last-of-type .cincheta img {
     position: absolute;
     right: 30px;
-    transform: rotate(2deg);
 }
 
 main article:first-of-type  {
