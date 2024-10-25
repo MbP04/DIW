@@ -1,0 +1,54 @@
+/* Estilos para el reproductor de video y controles */
+#reproductor {
+    margin: 20px auto;
+    width: 720px;
+    position: relative;
+    background: #333;
+    border-radius: 8px;
+}
+
+#barra {
+    width: 705px;
+    margin: 5px auto;
+    height: 16px;
+    padding: 2px;
+    border: 1px solid #CCCCCC;
+    background: #EEEEEE;
+    position: relative;
+}
+
+#progreso {
+    position: absolute;
+    width: 0px;
+    height: 16px;
+    background: rgba(0, 0, 150, .2);
+    border-radius: 4px;
+}
+
+.video-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+    background: linear-gradient(to right, #787974, #494948);
+    margin: 0 auto;
+}
+
+.video-controls input[type="button"] {
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 7px;
+    font-size: 16px;
+    background-color: #88674c;
+    transition: 0.5s ease-in-out background-color;
+}
+
+.video-controls input[type="button"]:hover {
+    background-color: #f37106;
+    transition: 0.5s ease-in-out background-color;
+}
