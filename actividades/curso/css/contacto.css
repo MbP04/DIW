@@ -1,0 +1,29 @@
+main{
+    background-image: url(../imgs/fondoForm.jpg);
+}
+
+#contenedorFormulario h1 {
+    position: absolute;
+    left: 390px;
+    top: 265px;
+    background-color: rgba(255, 255, 255, 0.7);
+    font-family: 'Aguafina Script', cursive;
+    font-style: italic;
+    color: #333;
+    letter-spacing: 5px;
+    text-shadow: 0px 0px 2px #777;
+    padding: 0px 10px;
+    margin: 0;
+}
+
+form{
+    position: relative;
+    display: inline-block;
+    margin: 50px;
+    padding: 20px 50px;
+    width: 600px;
+    background-color: rgb(200, 200, 200);
+    opacity: 0.7;
+    text-align: left;
+    box-shadow: 3px 0px 8px rgba(0, 0, 0, 0);
+}
