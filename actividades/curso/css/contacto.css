@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Aguafina+Script&display=swap');
 main{
     background-image: url(../imgs/fondoForm.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
 
 #contenedorFormulario h1 {
     position: absolute;
-    left: 390px;
-    top: 265px;
+    left: 490px;
+    top: -16px;
     background-color: rgba(255, 255, 255, 0.7);
     font-family: 'Aguafina Script', cursive;
     font-style: italic;
@@ -14,16 +18,135 @@ main{
     text-shadow: 0px 0px 2px #777;
     padding: 0px 10px;
     margin: 0;
+    font-family: 'Aguafina Script';
+    letter-spacing: 5px;
 }
 
-form{
+#contenedorFormulario {
     position: relative;
     display: inline-block;
     margin: 50px;
-    padding: 20px 50px;
+    padding: 40px 50px;
     width: 600px;
     background-color: rgb(200, 200, 200);
-    opacity: 0.7;
     text-align: left;
+    opacity: 0.9;
     box-shadow: 3px 0px 8px rgba(0, 0, 0, 0);
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    display: inline-block;
+    border: 4px solid #c8c4c4;
+    box-shadow: 
+        0px 1px 4px rgba(0, 0, 0, 0.3), 
+        inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+    color: black;
+    font-weight: bold;
+    padding: 1px 4px;
+    padding-left: 45px;
+    margin-bottom: 10px;
+    transition: all 0.4s ease-in;
+}
+
+/* Estilo de los campos de entrada */
+form input[type="text"],
+form input[type="email"] {
+    height: 32px;
+    width: 330px;
+    padding-left: 45px;
+    border: 4px solid #c8c4c4;
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    font-weight: bold;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3), inset 0px 0px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in;
+    margin-bottom: 15px;
+}
+
+/* Validación correcta */
+input[type="text"]:valid{
+    background-image: url('../imgs/icon-nombre.png'),url('../imgs/valid.png') !important;
+    background-position: 10px center, 340px center;
+    
+}
+input[type="email"]:valid {
+    
+    background-image: url('../imgs/icon-correo.png'),url('../imgs/valid.png') !important;
+    background-position: 10px center, 340px center;
+}
+
+/* Validación incorrecta */
+input[type="text"]:invalid{
+    background-image: url('../imgs/icon-nombre.png'), url('../imgs/invalid.png') !important;
+    background-position: 10px center, 340px center;
+}
+input[type="email"]:invalid {
+    background-image: url('../imgs/icon-correo.png'), url('../imgs/invalid.png') !important;;
+    background-position: 10px center, 340px center;
+}
+
+/* Cambio al obtener foco */
+form input[type="text"]:focus,
+form input[type="email"]:focus {
+    width: 370px;
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 1);
+}
+
+/* Imagen de fondo específica para cada campo */
+#nombre {
+    background-image: url('../imgs/icon-nombre.png');
+}
+
+#email {
+    background-image: url('../imgs/icon-correo.png');
+}
+
+/* Asterisco para campos requeridos */
+input[required] + label::after {
+    content: '*';
+    color: red;
+    margin-left: 5px;
+}
+
+/* Campo de mensaje */
+#mensaje {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    width: 90%;
+    height: 150px;
+    padding-left: 45px;
+    background-image: url('../imgs/icon-mensaje.png');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease-in;
+    outline: none;
+}
+
+#mensaje:focus {
+    box-shadow: 0px 0px 12px rgba(255, 255, 255, 1);
+}
+
+/* Botón de envío */
+input[type="submit"] {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #434343;
+    color: white;
+    background: linear-gradient(to bottom, #5e5e5e, #2a2a2a);
+    box-shadow: inset 0px 1px 1px #353535;
+    cursor: pointer;
+    transition: 0.4s ease-in-out background;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to top, #5e5e5e, #2a2a2a);
+}
+
+/* Asterisco para campos requeridos */
+input[required] + label::after {
+    content: '*';
+    color: red;
+    margin-left: 5px;
 }
