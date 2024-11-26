@@ -11,6 +11,24 @@ hr{
     width: 80%;
 }
 
+.header__logo{
+    animation: 5s rotacion infinite;
+}
+
+@keyframes rotacion {
+    from {
+        transform: rotate(0deg);
+    }
+    50%{        
+        transform: rotate(180deg);
+    }
+  
+    to {
+        transform: rotate(360deg);
+    }
+  }
+
+
 header > h1{
     position: relative;
     margin-left: 100px;
