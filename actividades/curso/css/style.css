@@ -26,7 +26,7 @@ hr{
     to {
         transform: rotate(360deg);
     }
-  }
+}
 
 
 header > h1{
@@ -178,19 +178,19 @@ article > h4{
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
-.cincheta{
+.chincheta{
     position: absolute;
     top: -286px;
     width: 35px;
     height: 49x;
 }
 
-main article:first-of-type .cincheta img {
+main article:first-of-type .chincheta img {
     position: absolute;
     left: 120px;
 }
 
-main article:last-of-type .cincheta img {
+main article:last-of-type .chincheta img {
     position: absolute;
     right: 30px;
 }
@@ -201,6 +201,79 @@ main article:first-of-type  {
 
 main article:last-of-type  {
     transform: rotate(2deg);
+}
+
+/*animaciones chinchetas*/
+#chincheta1 {
+    position: absolute;
+    animation: none;
+}
+
+@keyframes mueveChincheta1 {
+    from {
+        left: -120px;
+    }  
+    to {
+        left: 30px;
+    }
+}
+
+#chincheta2 {
+    position: absolute;
+    animation: none;
+}
+
+@keyframes mueveChincheta2 {
+    0% {
+        left: -40px;
+    }
+    100% {
+        left: 30px;
+    }
+}
+
+#chincheta3 {
+    position: absolute;
+    animation: none;
+}
+
+@keyframes mueveChincheta3 {
+    from {
+        right: -30px;
+    }  
+    to {
+        right: 100px;
+    }
+}
+
+/*animaciones article*/
+
+#article1 {
+    transform: rotate(0deg);
+    animation: none;
+}
+
+@keyframes animArticle1 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-2deg);
+    }
+}
+
+#article2 {
+    transform: rotate(0deg);
+    animation: none;
+}
+
+@keyframes animArticle2 {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(2deg);
+    }
 }
 
 
