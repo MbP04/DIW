@@ -1,0 +1,27 @@
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background-color: brown;
+}
+
+.subcontenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 200px;
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 20px;
+}
+
+.subcontenedor img{
+    width: 100px;
+    height: auto;
+}
