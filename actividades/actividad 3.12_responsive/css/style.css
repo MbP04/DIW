@@ -25,3 +25,13 @@
     width: 100px;
     height: auto;
 }
+
+@media screen and (max-width:800px) {
+    .contenedor {
+        display: block;
+    }
+    .subcontenedor {
+        width: auto;
+        height: auto;
+    }
+  }
