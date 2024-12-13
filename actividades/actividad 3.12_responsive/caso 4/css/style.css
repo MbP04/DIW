@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo general del menú */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    height: 100px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    display: inline-block;
+}
+
+/* Menú hamburguesa */
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.menu-icon div {
+    width: 25px;
+    height: 4px;
+    background-color: white;
+    margin: 5px 0;
+}
+
+/* Estilo para el contenedor del menú en pantallas pequeñas */
+.menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Media Query para pantallas pequeñas (menos de 600px) */
+@media (max-width: 600px) {
+    nav a {
+        display: none;  /* Ocultar los enlaces */
+        text-align: left;
+        padding: 10px;
+        width: 100%;
+        border-top: 1px solid #444;
+    }
+
+    nav a:hover {
+        background-color: #575757;
+    }
+
+    /* Mostrar icono hamburguesa */
+    .menu-icon {
+        display: block;  /* Mostrar el ícono del menú */
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Cuando el checkbox esté marcado, mostrar los enlaces */
+    input[type="checkbox"]:checked + .menu a {
+        display: block;
+    }
+
+    /* Cambiar el estilo del icono hamburguesa cuando se active */
+    input[type="checkbox"]:checked + .menu-icon div:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 12px;
+    }
+
+    input[type="checkbox"]:checked + .menu-icon div:nth-child(2) {
+        opacity: 0;
+    }
+
+    input[type="checkbox"]:checked + .menu-icon div:nth-child(3) {
+        transform: rotate(-45deg);
+        position: relative;
+        top: -6px;
+    }
+}
