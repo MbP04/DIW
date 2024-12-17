@@ -294,7 +294,48 @@ footer{
     header{
         font-size: 0.7em;
     } 
-    
+
+    .submenu > li{
+        margin: 0 8% 2% 8%;
+    }
     
 }
+
+@media (max-width: 700px) {
+    .submenu > li{
+        margin: 0 4% 1% 4%;
+    }
+    
+}
+
+.menu-toggle {
+    display: none; 
+    width: 80px;
+    height: 80px;
+    background: url('../imgs/menu.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    top: 10px; 
+    margin: 0 auto; 
+}
+
+@media (max-width: 475px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav .page__menu__item {
+        display: none;
+        margin: 0;
+    }
+
+    nav.desplegado .page__menu__item {
+        display: block; 
+        text-align: center; 
+    }
+}
+
+
   
