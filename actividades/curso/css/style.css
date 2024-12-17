@@ -38,7 +38,7 @@ h1 > img{
     left: -85px;
 }
 
-.contenedor{
+.page{
     display: flex;
     flex-direction: column;
 }
@@ -73,7 +73,7 @@ nav a:hover{
     transition: text-shadow 0.3s, color 0.3s;
 }
 
-.contenedor__menu__item{
+.page__menu__item{
     margin: 10px 0px;
     display: flex;
     flex-direction: column;
@@ -82,7 +82,7 @@ nav a:hover{
     position: relative;
 }
 
-.contenedor__menu__item__enlace{
+.page__menu__item__enlace{
     text-align: center;
     text-decoration: none;
     color: white;    
@@ -93,8 +93,8 @@ ul {
 }
 
 /*Focus de video*/
-.contenedor__menu__item:hover .contenedor__menu__item__enlace,
-.contenedor__menu__item .submenu {
+.page__menu__item:hover .page__menu__item__enlace,
+.page__menu__item .submenu {
     text-shadow: 2px 2px 0px red; 
     color: white; 
 }
@@ -111,7 +111,7 @@ ul {
     padding: 0; 
 }
 
-.contenedor__menu__item:hover .submenu {
+.page__menu__item:hover .submenu {
     display: block; /* Muestra el submenú al pasar el ratón */
 }
 
@@ -277,11 +277,24 @@ main article:last-of-type  {
 }
 
 
-
-
 footer{
     background: linear-gradient(360deg, rgb(0, 88, 160), rgb(30, 128, 207));
     border-radius: 0px 0px 25px 25px ;
     color: white;
     text-align: center;
 }
+
+
+@media (max-width: 1024px) {
+    .page{
+        width: 90%;
+        min-width: 320px;
+    }
+
+    header{
+        font-size: 0.7em;
+    } 
+    
+    
+}
+  

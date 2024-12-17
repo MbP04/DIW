@@ -6,7 +6,7 @@ main{
     background-size: cover;
 }
 
-#contenedorFormulario h1 {
+#pageFormulario h1 {
     position: absolute;
     left: 490px;
     top: -16px;
@@ -22,7 +22,7 @@ main{
     letter-spacing: 5px;
 }
 
-#contenedorFormulario {
+#pageFormulario {
     position: relative;
     display: inline-block;
     margin: 50px;
