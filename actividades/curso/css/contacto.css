@@ -150,3 +150,39 @@ input[required] + label::after {
     color: red;
     margin-left: 5px;
 }
+
+
+@media (max-width: 1024px) {
+
+    #pageFormulario {
+        margin: 4%;              
+        width: 58%;              
+    }
+
+    #pageFormulario h1 {
+        position: static;       
+        margin: 2% 0 2% 0;      
+        padding: 0 1%;          
+    }
+
+    form input[type="text"],
+    form input[type="email"] {
+        height: 5%;             
+        width: 55%;              
+    }
+
+    form input[type="text"]:focus,
+    form input[type="email"]:focus {
+        width: 61%;              
+    }
+
+    form textarea {
+        width: 75%;              
+    }
+
+    input[type="submit"] {
+        display: block;         
+        width: 100%;             
+        margin-top: 10px;        
+    }
+}
