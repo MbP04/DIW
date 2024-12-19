@@ -1,7 +1,9 @@
 /* Estilos para el reproductor de video y controles */
 #reproductor {
-    margin: 20px auto;
-    width: 720px;
+    display: block; 
+    width: 95%; 
+    max-width: 720px; 
+    margin: 20px auto; 
     position: relative;
     background: #333;
     border-radius: 8px;
@@ -25,16 +27,21 @@
     border-radius: 4px;
 }
 
+video{
+    width: 95%; 
+    max-width: 720px; 
+    height: auto; 
+    margin: 5px; 
+}
+
+
 .video-controls {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    margin-top: 10px;
-    background: linear-gradient(to right, #787974, #494948);
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
     margin: 0 auto;
 }
+
 
 .video-controls input[type="button"] {
     padding: 10px;
@@ -51,4 +58,25 @@
 .video-controls input[type="button"]:hover {
     background-color: #f37106;
     transition: 0.5s ease-in-out background-color;
+}
+
+#barra {
+    width: 95%;             
+    max-width: 705px;      
+    padding: 0;            
+    margin: 0 auto;         
+}
+
+@media (max-width: 970px) {
+    .video-controls input {
+        display: block;     
+        width: 100%;         
+        margin-bottom: 10px; 
+        margin: 0 auto;
+    }
+
+    .video-controls {
+        margin: 20px;
+        padding: 20px;
+    }
 }
