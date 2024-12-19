@@ -282,6 +282,18 @@ footer{
     text-align: center;
 }
 
+/*Te he creat */
+@media (max-width: 1200px) {
+    .moviles{
+        display: flex;
+        flex-direction: column;
+    }
+
+    article{
+        max-width: 320px;
+    }
+    
+}
 
 @media (max-width: 1024px) {
     .page{
