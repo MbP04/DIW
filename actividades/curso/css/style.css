@@ -9,6 +9,8 @@ hr{
     width: 80%;
 }
 
+/*animacion del logo*/
+
 .header__logo{
     animation: 5s rotacion infinite;
 }
@@ -87,7 +89,7 @@ nav a:hover{
 }
 
 ul {
-    list-style-type: none; /* Elimina las viñetas */
+    list-style-type: none;
 }
 
 /*Focus de video*/
@@ -175,6 +177,8 @@ article > h4{
     position: relative;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
+
+/*posicion de las chinchetas*/
 
 .chincheta{
     position: absolute;
@@ -282,7 +286,6 @@ footer{
     text-align: center;
 }
 
-/*Te he creat */
 @media (max-width: 1200px) {
     .moviles{
         display: flex;
@@ -331,14 +334,12 @@ footer{
     margin: 0 auto; 
 }
 
-/* Cuando la pantalla sea de 475px o menos, el menú se muestra */
 @media (max-width: 475px) {
     .menu-desplegable {
         display: block; /* Hacer visible el ícono de menú */
         margin-bottom: 20px;
     }
 
-    /* Aseguramos que el menú se pueda mostrar cuando se pase el ratón sobre la imagen */
     nav:hover .page__menu__item {
         display: flex; /* Mostrar los elementos del menú */
         flex-direction: column;
@@ -346,7 +347,6 @@ footer{
         align-items: center;
     }
 
-    /* Ocultamos el menú por defecto, y solo se muestra cuando el contenedor está desplegado */
     .page__menu__item {
         display: none;
     }
