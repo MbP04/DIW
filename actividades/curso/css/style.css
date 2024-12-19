@@ -1,5 +1,3 @@
-/*ver el ejercicio en*/
-
 body{
     background: linear-gradient(rgb(206, 43, 2), rgb(255, 255, 255));
     padding: 15px;
@@ -308,7 +306,7 @@ footer{
     
 }
 
-.menu-toggle {
+.menu-desplegable {
     display: none; 
     width: 80px;
     height: 80px;
@@ -321,21 +319,30 @@ footer{
     margin: 0 auto; 
 }
 
+/* Cuando la pantalla sea de 475px o menos, el menú se muestra */
 @media (max-width: 475px) {
-    .menu-toggle {
-        display: block;
+    .menu-desplegable {
+        display: block; /* Hacer visible el ícono de menú */
+        margin-bottom: 20px;
     }
 
-    nav .page__menu__item {
+    /* Aseguramos que el menú se pueda mostrar cuando se pase el ratón sobre la imagen */
+    nav:hover .page__menu__item {
+        display: flex; /* Mostrar los elementos del menú */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Ocultamos el menú por defecto, y solo se muestra cuando el contenedor está desplegado */
+    .page__menu__item {
         display: none;
-        margin: 0;
     }
 
-    nav.desplegado .page__menu__item {
-        display: block; 
-        text-align: center; 
+    nav{
+        display: flex;
+        flex-direction: column;
     }
 }
-
 
   
