@@ -1,0 +1,24 @@
+body{
+    overflow-x: hidden;
+}
+
+.gallery{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4px;
+}
+
+.gallery img{
+    width: 25%;
+height: 300px;
+object-fit: cover;
+margin-top: 8px;
+padding: 0 4px;
+border-radius: 10px;
+}
+
