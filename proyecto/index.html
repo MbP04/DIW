@@ -32,57 +32,87 @@
 </header>
 
 <body>
-    <div class="presentacion">
-        <div class="presentacion__1">
-            <h1>Bienvenidos a los Juniors de Sant Lluís Bertran</h1>
-            <h3>
-                Descubre un lugar donde los valores, la amistad y la aventura se
-                encuentran
-            </h3>
-            <p>
-                En los Juniors de Sant Lluís Bertran, ofrecemos a los niños y jóvenes
-                una experiencia única que fomenta el crecimiento personal, la
-                formación en valores cristianos y el disfrute de actividades
-                emocionantes al aire libre. Nuestro equipo de monitores está
-                comprometido en crear un entorno seguro, divertido y enriquecedor
-                donde cada niño pueda ser parte de una gran familia.
-            </p>
-        </div>
-
-        <video class="presentacion__video" width="600" height="400" controls>
-            <source src="./videos/campamento.mp4" type="video/mp4">
-            Tu navegador no soporta el elemento de video.
-          </video>
-        <!-- <div class="presentacion__2">
-            <h2>Bienvenidos a los Juniors de Sant Lluís Bertran</h2>
-            <ul>
-                <li>
-                    Educación en Valores: A través de dinámicas y actividades, enseñamos
-                    respeto, solidaridad, trabajo en equipo y la importancia del
-                    servicio a los demás.
-                </li>
-                <li>
-                    Amistades para toda la vida: En nuestros encuentros semanales y
-                    campamentos, los niños tienen la oportunidad de hacer nuevas
-                    amistades y compartir momentos inolvidables.
-                </li>
-                <li>
-                    Actividades al aire libre: Excursiones, juegos, y campamentos donde
-                    la naturaleza es el escenario perfecto para aprender y divertirse.
-                </li>
-                <li>
-                    Ambiente seguro y supervisado: Contamos con monitores formados y
-                    comprometidos que garantizan la seguridad y el bienestar de los
-                    niños en todo momento.
-                </li>
-                <li>
-                    Compromiso con la comunidad: Los Juniors de Sant Lluís Bertran están
-                    arraigados en la comunidad local, promoviendo el servicio y la
-                    participación activa.
-                </li>
-            </ul>
-        </div> -->
+    <div class="imagen">
+        <img class="imagen__item" src="./images/todos.jpg" alt="Imagen de todos">
     </div>
+    <main class="presentacion">
+        <!-- Sección de bienvenida -->
+        <article class="article">
+            <div class="presentacion__1">
+                <h1>Bienvenidos a los Juniors de Sant Lluís Bertran</h1>
+                <h3>
+                    Descubre un lugar donde los valores, la amistad y la aventura se
+                    encuentran
+                </h3>
+                <p>
+                    En los Juniors de Sant Lluís Bertran, ofrecemos a los niños y jóvenes
+                    una experiencia única que fomenta el crecimiento personal, la
+                    formación en valores cristianos y el disfrute de actividades
+                    emocionantes al aire libre. Nuestro equipo de monitores está
+                    comprometido en crear un entorno seguro, divertido y enriquecedor
+                    donde cada niño pueda ser parte de una gran familia.
+                </p>
+            </div>
+        </article>
+    
+        <!-- Sección de video -->
+        <article class="article">
+            <div class="presentacion__video">
+                <h1>¡Nos vamos de campamentos!</h1>
+                <video class="presentacion__video__mp4" width="600" height="400" controls>
+                    <source src="./videos/campamento.mp4" type="video/mp4">
+                    Tu navegador no soporta el elemento de video.
+                </video>
+            </div>
+        </article>
+    
+        <!-- Sección de valores -->
+         <h2>APRENDEMOS....</h2>
+        <article class="article">
+            <div class="presentacion__2">
+                <ul>
+                    <li>
+                        <strong> Educación en Valores </strong>: A través de dinámicas y actividades, enseñamos
+                        respeto, solidaridad, trabajo en equipo ....
+                    </li>
+                    <br>
+                    <li>
+                       <strong> Amistades para toda la vida </strong>: En nuestros encuentros semanales y
+                        campamentos, los niños tienen la oportunidad de hacer nuevas
+                        amistades.
+                    </li>
+                    <br>
+                    <li>
+                        <strong> Actividades al aire libre </strong>: Excursiones, juegos, y campamentos donde
+                        la naturaleza es el escenario perfecto para aprender y divertirse.
+                    </li>
+                    <br>
+                    <li>
+                        <strong> Ambiente seguro y supervisado </strong>
+                    </li>
+                    <br>
+                    <li>
+                        <strong> Compromiso con la comunidad </strong>: Los Juniors de Sant Lluís Bertran están
+                        arraigados en la comunidad local, promoviendo el servicio y la
+                        participación activa.
+                    </li>
+                </ul>
+            </div>
+        </article>
+
+        <section class="ubicacion">
+            <h2>Encuéntranos aquí</h2>
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3108.3617058687177!2d-0.4717771245842293!3d39.43797708361092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6051c9e0354035%3A0x2b17c3599f9b7e3b!2sParroquia%20de%20San%20Luis%20Bertr%C3%A1n!5e0!3m2!1ses!2ses!4v1690721234567!5m2!1ses!2ses" 
+              width="100%" 
+              height="350" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </section>
+    </main>
 </body>
 
 <footer class="footer">
