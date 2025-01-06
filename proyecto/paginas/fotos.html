@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juniors Sant Lluis</title>
+    <link rel="icon" href="../images/icono.png">
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/fotos.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
@@ -12,38 +13,40 @@
   </head>
   <header>
     <div class="login">
-        <h1 class="login__titulo">Juniors Sant Lluis</h1>
+        <div class="contenedor__logo">
+            <img src="../images/logo.png" class="contenedor__logo__imagen" alt="">
+        </div>
+        <h1 class="contenedor__logo__titulo"><strong>Juniors Sant Lluis </strong></h1>
+
         <div class="login__bloques">
             <div class="login__bloques__button">
-                <a class="login__bloques__button__item" href="paginas/login.html">Iniciar Sesión</a>
+                <a class="login__bloques__button__item" href="sesion.html">Iniciar Sesión</a>
             </div>
             <button class="login__bloques__menu__toggle">☰</button>
          </div>
     </div>
-    <div class="menu">
-        <div class="menu__enlaces">
-            <a class="menu__enlaces__item" href="../index.html">Inicio</a>
-            <a class="menu__enlaces__item" href="sobreNosotros.html">Sobre Nosotros</a>
-            <a class="menu__enlaces__item" href="informacion.html">Informacion</a>
-            <a class="menu__enlaces__item" href="tienda.html">Tienda</a>
-            <a class="menu__enlaces__item" href="fotos.html">Fotos</a>
-            <a class="menu__enlaces__item" href="secretaria.html">Secretaria</a>
-        </div>
-    </div>
 </header>
+<nav class="menu">
+  <div class="menu__enlaces">
+      <a class="menu__enlaces__item" href="../index.html">Inicio</a>
+      <a class="menu__enlaces__item" href="./sobreNosotros.html">Sobre Nosotros</a>
+      <!-- <a class="menu__enlaces__item" href="./informacion.html">Informacion</a> -->
+      <a class="menu__enlaces__item" href="./tienda.html">Tienda</a>
+      <a class="menu__enlaces__item" href="./fotos.html">Fotos</a>
+      <a class="menu__enlaces__item" href="./secretaria.html">Secretaria</a>
+  </div>
+</nav>
   <body>
     <div class="gallery">
-      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg"/>
-      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg"/>
-      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg"/>
-      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg"/>
-      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg"/>
-      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg"/>
-      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg"/>
-      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg"/>
-      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg"/>
-      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/10.jpg"/>
+      <img src="../images/galleria/imagen1.jpg" class="img1" />
+      <img src="../images/galleria/imagen2.jpg" class="img2" />
+      <img src="../images/galleria/imagen3.jpg" class="img3" />
+      <img src="../images/galleria/imagen4.jpg" class="img4" />
+      <img src="../images/galleria/imagen5.jpg" class="img5" />
+      <img src="../images/galleria/imagen6.jpg" class="img6" />
+      <img src="../images/galleria/imagen7.jpg" class="img7" />
     </div>
+    
   </body>
   
   <footer class="footer">

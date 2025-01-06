@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Juniors Sant Lluis</title>
+    <link rel="icon" href="../images/icono.png">
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <script src="../js/script.js"></script>
@@ -11,25 +12,29 @@
   </head>
   <header>
     <div class="login">
-        <h1 class="login__titulo">Juniors Sant Lluis</h1>
+        <div class="contenedor__logo">
+            <img src="../images/logo.png" class="contenedor__logo__imagen" alt="">
+        </div>
+        <h1 class="contenedor__logo__titulo"><strong>Juniors Sant Lluis </strong></h1>
+
         <div class="login__bloques">
             <div class="login__bloques__button">
-                <a class="login__bloques__button__item" href="paginas/login.html">Iniciar Sesión</a>
+                <a class="login__bloques__button__item" href="paginas/sesion.html">Iniciar Sesión</a>
             </div>
             <button class="login__bloques__menu__toggle">☰</button>
          </div>
     </div>
-    <div class="menu">
-        <div class="menu__enlaces">
-            <a class="menu__enlaces__item" href="../index.html">Inicio</a>
-            <a class="menu__enlaces__item" href="sobreNosotros.html">Sobre Nosotros</a>
-            <a class="menu__enlaces__item" href="informacion.html">Informacion</a>
-            <a class="menu__enlaces__item" href="tienda.html">Tienda</a>
-            <a class="menu__enlaces__item" href="fotos.html">Fotos</a>
-            <a class="menu__enlaces__item" href="secretaria.html">Secretaria</a>
-        </div>
-    </div>
 </header>
+<nav class="menu">
+  <div class="menu__enlaces">
+      <a class="menu__enlaces__item" href="../index.html">Inicio</a>
+      <a class="menu__enlaces__item" href="sobreNosotros.html">Sobre Nosotros</a>
+      <!-- <a class="menu__enlaces__item" href="informacion.html">Informacion</a> -->
+      <a class="menu__enlaces__item" href="tienda.html">Tienda</a>
+      <a class="menu__enlaces__item" href="fotos.html">Fotos</a>
+      <a class="menu__enlaces__item" href="secretaria.html">Secretaria</a>
+  </div>
+</nav>
   <body></body>
   <footer class="footer">
     <p>Juniors Sant Lluis Bertran</p>

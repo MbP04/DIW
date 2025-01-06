@@ -11,7 +11,7 @@
 
 header{
   width: auto;
-  height: 100%;
+  height: 80px;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -19,11 +19,12 @@ header{
 }
 
 body {
-  color: rgb(116, 152, 183);
+  color: rgb(40, 102, 156);
   font-weight: 300;
-  font-family: "Ubuntu";
-  /* background-color: rgb(240, 237, 192); */
-  margin-bottom: 0;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5DC;
 }
 
 .login{
@@ -33,7 +34,7 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(rgb(1, 51, 95),rgb(0, 72, 131)) ;
+  background: #2086b1;
   color: white;
   padding: 10px;
 }
@@ -82,21 +83,27 @@ body {
 }
 
 .menu {
+  position: sticky;
+  top: 0px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   color: rgb(239, 241, 227);
+  background-color: white;
+  z-index: 1000;
+  background-color: #F5F5DC;
 }
+
 
 /* Botón para alternar el menú */
 .login__bloques__menu__toggle {
-  display: none; /* Sigue oculto en pantallas grandes */
+  display: none; 
   background: none;
   border: none;
   color: white;
   font-size: 24px;
   cursor: pointer;
-  margin-left: 10px; /* Separación del botón */
+  margin: 0 10px; 
 }
 
 .menu__enlaces {
@@ -107,7 +114,7 @@ body {
 .menu__enlaces__item {
   cursor: pointer;
   text-decoration: none;
-  color: rgb(116, 152, 183);
+  color: #2086b1;
   font-weight: 700;
   border-radius: 0 0 5px 5px;
   transition: 0.5s ease-in-out background-color, 0.5s ease-in-out color;
@@ -116,11 +123,13 @@ body {
 
 .menu__enlaces__item:hover {
   transition: 0.5s ease-in-out background-color, 0.5s ease-in-out color;
-  background-color: rgb(0, 72, 131);
+  background-color: #2086b1;
   color: white;
   border-radius: 0 0 5px 5px;
 }
 
+
+/*BODY*/
 .presentacion{
   width: 100%;
   display: flex;
@@ -130,68 +139,210 @@ body {
   gap: 30px;
 }
 
-.imagen{
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.imagen__item{
-  height: auto;
-  width: 95%;
-  margin: 30px 0;
+.presentacion__1 h1{
+  font-size: 3rem;
+  margin-top: 0;
 }
 
 .article{
   width: 100%;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px;
+  gap: 50px;
 }
 
 .article:nth-child(2){
-  background-color: transparent;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 60px 20px;
+  background-image: 
+    linear-gradient(135deg, rgba(145, 202, 226, 0.9), rgba(70, 130, 180, 0.8));
+  background-position: center center;
+  background-size: cover;
+  
 }
 
 .presentacion__1 {
   font-family: 'Raleway';
-  margin: 0 auto;
-  width: 70%;
+  margin: 30px;
+  width: 100%;
+  height: 100%;
   text-align: center;
-  padding: 100px;
-  background-color: rgb(250, 250, 250);
-  color: rgb(116, 152, 183);
+  margin-top: 60px;
+  padding: 40px 100px 100px 100px;
+  color: white; /* Texto blanco */
   border-radius: 10px;
-
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url(../images/todos.jpg); /* Superposición negra con imagen de fondo */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.presentacion__video {
-  width: 100%;
+.article__info {
+  width: 80%;
   text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #2086b1;
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
-.presentacion__video__mp4 {
-  width: 100%;
+.article__info p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.article__valores{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.valores__lista {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ gap: 30px;
+}
+
+.lista__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 45%;
   height: auto;
+  padding: 25px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: white; 
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 
+              0 6px 6px rgba(0, 0, 0, 0.23); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto al pasar el cursor */
+  opacity: 0; /* Empieza invisible */
+  animation-duration: 1s;
+  animation-fill-mode: forwards; /* Mantén el estado final de la animación */
 }
 
-.presentacion__2 {
-  width: 70%;
-  background-color: rgb(255, 255, 255);
-  padding: 100px;
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.lista__item:nth-child(odd){
+  margin-right: 300px;
+  animation-name: slideInFromLeft; /* Impares vienen desde la izquierda */
+}
+
+.lista__item:nth-child(even){
+  margin-left: 300px;
+  animation-name: slideInFromRight; /* Pares vienen desde la derecha */
+}
+
+.lista__item:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3), 
+              0 10px 10px rgba(0, 0, 0, 0.22); /* Más intensidad al hover */
+}
+
+.lista__item img{
+  width: 400px;
+  height: auto;
+  object-fit: cover;
   border-radius: 10px;
 }
 
-iframe {
-  display: block;
+.ubicacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px 20px;
 }
 
-.ubicacion{
-  width: 100%;
+.ubicacion__contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.ubicacion__horario, .ubicacion__mapa {
+  width: 45%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+}
+
+.ubicacion__horario__items{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.ubicacion__horario__items__especial{
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Agregar sombra sutil al mapa */
+  padding: 10px;
+  margin: 0 0 20px 0;
+  border-radius: 20px;
+}
+
+.ubicacion__horario h3, .ubicacion__mapa h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #2086b1; 
   text-align: center;
+}
+
+.ubicacion__horario p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.ubicacion__mapa iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Agregar sombra sutil al mapa */
 }
 
 .footer {
@@ -202,7 +353,7 @@ iframe {
   justify-content: space-around;
   align-items: center;
   font-family: 'Rubik', sans-serif;
-  background: linear-gradient(rgb(0, 72, 131),rgb(1, 27, 49)) ;
+  background: #2086b1;
   color: rgb(239, 241, 227);
   padding: 20px 0px;
 }
@@ -213,7 +364,7 @@ iframe {
   cursor: pointer;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1024px) {
   .menu {
     position: relative;
     margin-left: auto; /* Alinea el menú a la derecha */
@@ -265,8 +416,172 @@ iframe {
     text-align: center;
   }
 
-  .presentacion__video {
+  .presentacion__1 h1{
+    font-size: 2rem;
+  }
+
+
+  /*lista de valores*/
+
+  .jesus{
     width: 70%;
     height: auto;
   }
+
+  .article__valores{
+    flex-direction: column;
+  }
+
+  .lista__item {
+    width: 80%;
+  }
+
+  .lista__item:nth-child(even){
+    margin-left: 0;
+  }
+
+  .lista__item:nth-child(odd){
+    margin-right: 0;
+  }
+
+  /*Ubicacion y Horarios*/
+
+  .ubicacion__contenedor{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ubicacion__horario, .ubicacion__mapa {
+    width: 80%;
+  }
 }
+
+/* Asegúrate de que el contenido se ajuste en pantallas pequeñas */
+@media (max-width: 550px) {
+  
+  /* Header */
+  header {
+    height: auto;
+  }
+
+  /* Contenedor de logo */
+  .contenedor__logo {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contenedor__logo__titulo{
+    font-size: 30px;
+  }
+
+  /* Ajuste de logo */
+  .contenedor__logo__imagen {
+    width: 100px; /* Reducir tamaño en móvil */
+  }
+
+  .login{
+    flex-direction: column;
+  }
+
+  .login__bloques{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+  /* Botones de login */
+  .login__bloques__button {
+    width: 100%; /* Hacer los botones de login más grandes en móvil */
+    margin-bottom: 10px;
+  }
+
+  /* Ajustes de menú */
+  .menu__enlaces {
+    flex-direction: column; /* Cambiar de fila a columna */
+    gap: 10px;
+    position: static;
+  }
+
+  .menu__enlaces__item{
+    text-align: center;
+  }
+
+  .presentacion__1{
+    margin: 10px;
+    padding: 10px;
+  }
+
+  /* Artículos */
+  .article {
+    flex-direction: column; /* Hacer que los artículos estén en columna */
+    padding: 20px;
+    gap: 20px;
+  }
+
+  /* Artículo 2 */
+  .article:nth-child(2) {
+    padding: 20px;
+    background-size: contain;
+    background-position: top center; /* Asegurarte que la imagen no se pierda */
+  }
+
+  /* Información de los artículos */
+  .article__info {
+    width: 100%; /* Que ocupe el 100% del ancho */
+  }
+
+  /* Valores */
+  .article__valores {
+    flex-direction: column; /* Cambiar a columna */
+  }
+
+  .lista__item {
+    width: 100%; /* Las tarjetas de valores ocuparán el 100% del ancho */
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  /* Ubicación */
+  .ubicacion__contenedor {
+    flex-direction: column; /* Hacer columnas en lugar de filas */
+    align-items: center;
+  }
+
+  .ubicacion__horario, .ubicacion__mapa {
+    width: 100%; /* Ocupando el 100% en dispositivos pequeños */
+    text-align: center;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column; /* Footer en columna */
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  /* Logo del footer */
+  .footer__imagenes {
+    margin-bottom: 15px;
+  }
+
+  /* Menu de navegación en pantallas pequeñas */
+  .login__bloques__menu__toggle {
+    display: block;
+    font-size: 30px;
+    color: #ffffff;
+  }
+
+  .menu.active .menu__enlaces {
+    display: flex;
+    gap: 10px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: #2086b1;
+    border-radius: 5px;
+  }
+}
+
+
