@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;1,300;1,400&display=swap');
-
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +8,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   position: relative;
 }
 
@@ -54,7 +52,7 @@ video {
   left: 50%;
   transform: translateX(-50%);
   color: white;
-  animation: fadeInOpacity 1.5s ease forwards; 
+  animation: fadeInOpacity 1.5s ease forwards;
 }
 
 .bienvenida h1 {
@@ -80,7 +78,7 @@ video {
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(255, 255, 255, 0.1);
-  animation: fadeInOpacity 1.5s ease forwards; 
+  animation: fadeInOpacity 1.5s ease forwards;
 }
 
 .login__img {
@@ -98,7 +96,7 @@ video {
 
 /*Formulario*/
 
-.input-container {
+.input__contenedor {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -107,6 +105,7 @@ video {
   border-radius: 5px;
   margin-bottom: 15px;
   background: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
 }
 
 input {
@@ -119,16 +118,21 @@ input {
   background-size: contain;
 }
 
-.input-container input:required {
-  background-image: url('../images/obligatorio.png');
+/*crece el contendor del input al estar en el (focus)*/
+.input__contenedor:has(input:focus) {
+  transform: scaleX(1.05);
 }
 
-.input-container input:valid {
-  background-image: url('../images/valido.png');
+.input__contenedor input:required {
+  background-image: url("../images/obligatorio.png");
 }
 
-.input-container input:focus:invalid {
-  background-image: url('../images/invalido.png');
+.input__contenedor input:valid {
+  background-image: url("../images/valido.png");
+}
+
+.input__contenedor input:focus:invalid {
+  background-image: url("../images/invalido.png");
 }
 
 .login__botones {
@@ -137,29 +141,27 @@ input {
   gap: 10px;
 }
 
-.btn-link {
+.boton {
   width: 100%;
   text-align: center;
   padding: 10px;
   font-size: 16px;
   font-weight: bold;
   color: white;
-  background-color: #4f88c5;
+  background-color: #5d83ae;
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.btn-link:hover {
-  background-color: #064181;
+.boton:hover {
+  background-color: #113c71;
 }
 
-.btn-link:active {
+.boton:active {
   transform: scale(0.95);
 }
-
-
 
 @keyframes fadeInOpacity {
   from {

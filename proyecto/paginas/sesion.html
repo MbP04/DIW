@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="../css/sesion.css" />
   </head>
   <body>
-    <!-- Contenedor del video -->
     <div class="presentacion__video">
       <video autoplay muted loop>
         <source src="../videos/curso.webm" type="video/webm" />
@@ -16,31 +15,35 @@
       </video>
     </div>
 
-    <!-- Capa oscura -->
     <div class="overlay"></div>
 
-    <!-- Contenedor de Bienvenida y Login -->
     <div class="presentacion">
-      <!-- Bienvenida -->
       <div class="bienvenida">
         <h1><strong>¡Iniciate en la familia Sant Lluís!</strong></h1>
-        <p>Inicia sesión para comenzar tu aventura con nosotros. Conéctate y descubre todo lo que tenemos preparado para ti.</p>
+        <p>
+          Inicia sesión para comenzar tu aventura con nosotros. Conéctate y
+          descubre todo lo que tenemos preparado para ti.
+        </p>
       </div>
 
-      <!-- Formulario de Login -->
       <div class="login">
         <h3>Inicia Sesión</h3>
         <img class="login__img" src="../images/logo.png" alt="Logo Juniors" />
         <form>
-          <div class="input-container">
+          <div class="input__contenedor">
             <input id="usuario" type="text" placeholder="Usuario" required />
           </div>
-          <div class="input-container">
-            <input id="password" type="password" placeholder="Contraseña" required/>
+          <div class="input__contenedor">
+            <input
+              id="password"
+              type="password"
+              placeholder="Contraseña"
+              required
+            />
           </div>
           <div class="login__botones">
-            <a href="../index.html" class="btn-link">Ingresar</a>
-            <a href="./crear.html" class="btn-link">Crear cuenta</a>
+            <a href="../index.html" class="boton">Ingresar</a>
+            <a href="./crear.html" class="boton">Crear cuenta</a>
           </div>
         </form>
       </div>

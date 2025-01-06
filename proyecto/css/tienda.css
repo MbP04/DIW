@@ -1,92 +1,96 @@
-  .intro {
-    width: 70%;
-    text-align: center;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #2086b1;
-    color: white;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-  font-family: 'Raleway', sans-serif;
+.intro {
+  width: 70%;
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #2086b1;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
-  
-  .intro h2 {
-    font-size: 2rem;
-  }
-  
-  .intro p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-  }
-  
-  .tienda {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-    margin: 50px auto;
-    padding: 20px;
-  }
-  
-  article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px;
-    background-color: white;
-    width: 250px;
-    padding: 20px;
-  }
-  
-  article:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
-  }
-  
-  article img {
-    margin: 0 auto;
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-  }
-  
-  .descripcion {
-    text-align: center;
-  }
-  
-  .descripcion h3 {
-    font-size: 1.5rem;
-    color: rgb(101, 132, 159);
-  }
-  
-  .descripcion .price {
-    font-size: 1.2rem;
-    color: #5589c0;
-    font-weight: bold;
-  }
-  
-  .btn-comprar {
-    padding: 10px 20px;
-    background-color: #5d83ae;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .btn-comprar:hover {
-    background-color: #113c71;
-  }
-  
-  main {
-    margin-bottom: 50px;
-  } 
+
+.intro h2 {
+  font-size: 2rem;
+}
+
+.intro p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.tienda {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+  background-color: white;
+  width: 250px;
+  padding: 20px;
+}
+
+article:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+article img {
+  margin: 0 auto;
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.descripcion {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.descripcion h3 {
+  font-size: 1.5rem;
+  color: rgb(101, 132, 159);
+}
+
+.descripcion .price {
+  font-size: 1.2rem;
+  color: #5589c0;
+  font-weight: bold;
+}
+
+.boton {
+  padding: 10px 20px;
+  background-color: #5d83ae;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #113c71;
+}
+
+main {
+  margin-bottom: 50px;
+}
