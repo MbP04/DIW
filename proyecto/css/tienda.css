@@ -29,6 +29,10 @@
   padding: 20px;
 }
 
+main {
+  margin-bottom: 50px;
+}
+
 article {
   display: flex;
   flex-direction: column;
@@ -91,6 +95,13 @@ article img {
   background-color: #113c71;
 }
 
-main {
-  margin-bottom: 50px;
+@media (max-width: 550px) {
+  .intro h2 {
+    font-size: 1.6rem;
+  }
+  
+  .intro p {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
 }

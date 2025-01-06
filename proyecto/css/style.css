@@ -1,13 +1,16 @@
+/* Importar fuentes desde Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* Resetear márgenes y padding para evitar inconsistencias */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Estilos para el header (cabecera) */
 header {
   width: auto;
   height: 80px;
@@ -17,7 +20,9 @@ header {
   font-family: "Rubik", sans-serif;
 }
 
+/* Estilos para el cuerpo del documento */
 body {
+  overflow-x: hidden;
   color: rgb(40, 102, 156);
   font-weight: 300;
   font-family: "Raleway", sans-serif;
@@ -26,6 +31,7 @@ body {
   background-color: #f5f5dc;
 }
 
+/* Estilos para el contenedor de login y logo */
 .login {
   width: auto;
   height: 100%;
@@ -38,6 +44,7 @@ body {
   padding: 10px;
 }
 
+/* Estilos para el logo y su contenedor */
 .contenedor__logo {
   display: flex;
   flex-direction: row;
@@ -55,12 +62,14 @@ body {
   font-weight: 400;
 }
 
+/* Estilos para los bloques de login */
 .login__bloques {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
+/* Estilos para el botón de login */
 .login__bloques__button {
   background: radial-gradient(rgb(0, 139, 253), rgb(0, 66, 121));
   cursor: pointer;
@@ -70,17 +79,20 @@ body {
   transition: 0.35s ease-in-out opacity;
 }
 
+/* Efecto hover para el botón de login */
 .login__bloques__button:hover {
   opacity: 0.8;
   transition: 0.35s ease-in-out opacity;
 }
 
+/* Estilos para el enlace de login */
 .login__bloques__button__item {
   color: white;
   font-weight: 900;
   text-decoration: none;
 }
 
+/* Estilos del menú de navegación */
 .menu {
   position: sticky;
   top: 0px;
@@ -93,7 +105,7 @@ body {
   background-color: #f5f5dc;
 }
 
-/* Botón para alternar el menú */
+/* Estilos para el botón de menú (oculto en pantalla grande, visible en móvil) */
 .login__bloques__menu__toggle {
   display: none;
   background: none;
@@ -104,11 +116,13 @@ body {
   margin: 0 10px;
 }
 
+/* Estilos de los enlaces del menú */
 .menu__enlaces {
   display: flex;
   flex-direction: row;
   gap: 30px;
 }
+
 .menu__enlaces__item {
   cursor: pointer;
   text-decoration: none;
@@ -119,6 +133,7 @@ body {
   padding: 15px;
 }
 
+/* Efecto hover para los enlaces del menú */
 .menu__enlaces__item:hover {
   transition: 0.5s ease-in-out background-color, 0.5s ease-in-out color;
   background-color: #2086b1;
@@ -126,7 +141,7 @@ body {
   border-radius: 0 0 5px 5px;
 }
 
-/*BODY*/
+/* Estilos de la presentación principal */
 .presentacion {
   width: 100%;
   display: flex;
@@ -141,6 +156,7 @@ body {
   margin-top: 0;
 }
 
+/* Estilos de los artículos */
 .article {
   width: 100%;
   height: 80vh;
@@ -150,6 +166,7 @@ body {
   gap: 50px;
 }
 
+/* Estilos para el segundo artículo con fondo degradado */
 .article:nth-child(2) {
   width: 100%;
   height: auto;
@@ -168,6 +185,7 @@ body {
   background-size: cover;
 }
 
+/* Estilos para la primera sección de presentación */
 .presentacion__1 {
   margin: 30px;
   width: 100%;
@@ -184,6 +202,7 @@ body {
   background-size: cover;
 }
 
+/* Estilos para la sección de información en los artículos */
 .article__info {
   width: 80%;
   text-align: center;
@@ -202,6 +221,7 @@ body {
   line-height: 1.8;
 }
 
+/* Estilos para la sección de valores */
 .article__valores {
   display: flex;
   flex-direction: row;
@@ -236,6 +256,7 @@ body {
   animation-fill-mode: forwards;
 }
 
+/* Animaciones para la entrada de los valores */
 .lista__item:nth-child(odd) {
   margin-right: 300px;
   animation-name: slideInFromLeft;
@@ -246,6 +267,7 @@ body {
   animation-name: slideInFromRight;
 }
 
+/* Animaciones de deslizamiento desde la izquierda */
 @keyframes slideInFromLeft {
   from {
     transform: translateX(-100%);
@@ -257,6 +279,7 @@ body {
   }
 }
 
+/* Animaciones de deslizamiento desde la derecha */
 @keyframes slideInFromRight {
   from {
     transform: translateX(100%);
@@ -268,6 +291,7 @@ body {
   }
 }
 
+/* Estilos para las imágenes dentro de los valores */
 .lista__item img {
   width: 400px;
   height: auto;
@@ -275,7 +299,7 @@ body {
   border-radius: 10px;
 }
 
-/*Horario y Ubiacion*/
+/* Estilos de la sección de horarios y ubicación */
 .ubicacion {
   display: flex;
   justify-content: center;
@@ -291,6 +315,7 @@ body {
   max-width: 1200px;
 }
 
+/* Estilos para la sección de horarios */
 .ubicacion__horario,
 .ubicacion__mapa {
   width: 45%;
@@ -314,8 +339,11 @@ body {
   padding: 10px;
   margin: 0 0 20px 0;
   border-radius: 20px;
+  background-color: #2086b1;
+  color: white !important;
 }
 
+/* Estilos para el texto de horarios y mapas */
 .ubicacion__horario h3,
 .ubicacion__mapa h3 {
   font-size: 1.8rem;
@@ -335,7 +363,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/*Aside*/
+/* Estilos del aside (barra lateral) */
 .aside {
   height: 100%;
   padding: 20px;
@@ -343,17 +371,18 @@ body {
   border: 1px solid #a2ccef;
   border-radius: 10px;
   margin: 0 10px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
+/* Estilos del título en el aside */
 .aside h3 {
   font-size: 1.5rem;
   margin-bottom: 15px;
   color: #2086b1;
 }
 
+/* Estilos para los eventos dentro del aside */
 .aside__eventos {
-  /* list-style: none; */
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -364,6 +393,7 @@ body {
   color: #555;
 }
 
+/* Estilos para los iconos de redes sociales */
 .aside__redes {
   display: flex;
   gap: 10px;
@@ -374,11 +404,11 @@ body {
   height: 30px;
 }
 
-.cancion{
+.cancion {
   margin-top: 20px;
 }
 
-/*Footer*/
+/* Estilos del footer (pie de página) */
 .footer {
   width: 100%;
   height: auto;
@@ -391,13 +421,38 @@ body {
   color: rgb(239, 241, 227);
   padding: 20px 0px;
 }
-.footer__imagenes {
-  display: block;
-}
-.footer__imagenes__item {
-  cursor: pointer;
+
+.enlace__guia{
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 5px;
+  border-radius: 10px;
+  transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
 }
 
+.enlace__guia:hover{
+  text-decoration: none;
+  color: #2086b1;
+  background-color: white;
+  transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+}
+
+/* Estilos para las imágenes del footer */
+.footer__imagenes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__imagenes__item {
+  cursor: pointer;
+  width: 50px;
+}
+
+/* medidas para la tablet */
 @media (max-width: 1024px) {
   .menu {
     position: relative;
@@ -476,7 +531,7 @@ body {
     margin-right: 0;
   }
 
-  .ubicacion{
+  .ubicacion {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -497,6 +552,7 @@ body {
   }
 }
 
+/* medidas para la movil */
 @media (max-width: 550px) {
   header {
     height: auto;

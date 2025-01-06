@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -21,6 +23,7 @@ body {
   z-index: 0;
 }
 
+/*video centrado en la ventana*/
 video {
   position: absolute;
   top: 50%;
@@ -32,6 +35,7 @@ video {
   z-index: -1;
 }
 
+/*capa oscura transparente*/
 .overlay {
   position: absolute;
   top: 0;
@@ -78,7 +82,7 @@ video {
   left: 50%;
   transform: translate(-50%, -50%);
   background: rgba(255, 255, 255, 0.1);
-  animation: fadeInOpacity 1.5s ease forwards;
+  animation: fadeInOpacity 1.5s ease-in-out forwards;
 }
 
 .login__img {
@@ -95,7 +99,6 @@ video {
 }
 
 /*Formulario*/
-
 .input__contenedor {
   display: flex;
   align-items: center;
@@ -105,7 +108,7 @@ video {
   border-radius: 5px;
   margin-bottom: 15px;
   background: rgba(255, 255, 255, 0.8);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 input {
@@ -152,7 +155,7 @@ input {
   text-decoration: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
 .boton:hover {
@@ -172,17 +175,18 @@ input {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 650px) {
   .login {
     width: 90%;
     padding: 20px;
   }
 
   .bienvenida h1 {
-    font-size: 1.8rem;
+    margin-top: 50px;
+    font-size: 2rem;
   }
 
   .bienvenida p {
-    font-size: 1rem;
+    display: none;
   }
 }
