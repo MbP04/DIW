@@ -1,107 +1,109 @@
 body {
-    font-family: 'LeagueGothic', sans-serif;
+  font-family: "LeagueGothic", sans-serif;
 }
-h1{
-    font-size: 2em;
-    margin: 20px;
+h1 {
+  font-size: 2em;
+  margin: 20px;
 }
 
 /*el texto seleccionado*/
 ::selection {
-    background-color: #484848;
-    color: #fff; 
-    text-shadow: none; 
+  background-color: #484848;
+  color: #fff;
+  text-shadow: none;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(202, 198, 193);
-    width: 720px;
-    height: auto;
-    padding: 20px;
-    margin: 10px auto;
-    background-image: url(../imgs/bg-formtitle-right.png), url(/imgs/bg-formtitle-left.png), url(/imgs/bg-form.png);
-    background-repeat: no-repeat, no-repeat;
-    background-position: top 45px right 80px, top 45px left 80px, bottom center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(202, 198, 193);
+  width: 720px;
+  height: auto;
+  padding: 20px;
+  margin: 10px auto;
+  background-image: url(../imgs/bg-formtitle-right.png),
+    url(/imgs/bg-formtitle-left.png), url(/imgs/bg-form.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: top 45px right 80px, top 45px left 80px, bottom center;
 }
 
 .caja {
-    margin-top: 20px;
-    width: 70%;
-    text-align: center;
+  margin-top: 20px;
+  width: 70%;
+  text-align: center;
 }
 
 input {
-    border: none;
-    background-color: transparent;
-    border-bottom: 2px dotted black;
-    width: 100%;
-    text-align: center;
-    background-repeat: no-repeat;
-    background-position: right center;
+  border: none;
+  background-color: transparent;
+  border-bottom: 2px dotted black;
+  width: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
-input:required{
-    background-image: url(../imgs/required.png);
+input:required {
+  background-image: url(../imgs/required.png);
 }
 
 input:focus {
-    outline: none;
-    border: none;
-    border-bottom: 2px dotted black;
+  outline: none;
+  border: none;
+  border-bottom: 2px dotted black;
 }
 
 input:focus:valid {
-    background-image: url(../imgs/valid.png);
+  background-image: url(../imgs/valid.png);
 }
 
 input:focus:invalid {
-    background-image: url(../imgs/invalid.png);
+  background-image: url(../imgs/invalid.png);
 }
 
-
 .button {
-    margin: 20px;
-    width: 50%;
-    height: 50px;
-    color: white; 
-    background: radial-gradient(circle, rgb(144, 144, 144), rgb(72, 72, 72)); /* Fondo degradado radial */
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer;
-    font-family: 'Tahoma', 'Geneva', sans-serif; 
-    font-weight: bold; 
-    font-size: 2em; 
-    opacity: 0.8; 
-    transition: opacity 0.25s linear; 
+  margin: 20px;
+  width: 50%;
+  height: 50px;
+  color: white;
+  background: radial-gradient(
+    circle,
+    rgb(144, 144, 144),
+    rgb(72, 72, 72)
+  ); /* Fondo degradado radial */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Tahoma", "Geneva", sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  opacity: 0.8;
+  transition: opacity 0.25s linear;
 }
 
 .button:hover {
-    opacity: 1; 
-    transition: 0.25s linear opacity;
+  opacity: 1;
+  transition: 0.25s linear opacity;
 }
 
-input[type=number] {
-    width: 10%;
-    padding-right: 40px;
+input[type="number"] {
+  width: 10%;
+  padding-right: 40px;
 }
-
 
 input[type="range"] {
-    margin-top: 15px;
+  margin-top: 15px;
 }
-
 
 /*Poner color a la barra del range en Firefox*/
 input[type="range"]::-moz-range-progress {
-    background-color: #a1a1a1; 
+  background-color: #a1a1a1;
 }
-  input[type="range"]::-moz-range-track {  
-    background-color: #a1a1a1;
-  }
+input[type="range"]::-moz-range-track {
+  background-color: #a1a1a1;
+}
 
-  input[type="range"]:focus:valid {
-    background-image: none;
+input[type="range"]:focus:valid {
+  background-image: none;
 }

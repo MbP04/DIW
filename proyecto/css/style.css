@@ -3,6 +3,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
+/*Presentacion global*/
+/*estas tres clases las uso en fotos.html, tienda y secretaria*/
+
+.presentacion__global{
+  width: 50%;
+  text-align: center;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #2086b1;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.presentacion__global__titulo{
+  font-size: 2rem;
+}
+
+.presentacion__global__texto{
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-top: 5px;
+}
+
+
 /* Resetear márgenes y padding para evitar inconsistencias */
 * {
   margin: 0;
@@ -408,6 +433,13 @@ body {
   margin-top: 20px;
 }
 
+.video{
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
 /* Estilos del footer (pie de página) */
 .footer {
   width: 100%;
@@ -549,6 +581,10 @@ body {
   .ubicacion__horario,
   .ubicacion__mapa {
     width: 80%;
+  }
+
+  .aside{
+    text-align: center;
   }
 }
 
