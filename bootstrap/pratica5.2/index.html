@@ -1,78 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Layout Responsivo</title>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  >
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejemplo Bootstrap</title>
+    <!-- Enlaza tu CSS de Bootstrap (v4 o v5) -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <!-- O con v5:
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  --></head>
   <style>
-    *{
-    border: 1px solid white;   
-    }
-    .header, .footer {
-      background-color: limegreen;
-      height: 50px;
-    }
-    .sidebar {
-      background-color: red;
-    }
-    .top-bar {
-      background-color: hotpink;
-      height: 50px;
-    }
-    .content {
-      background-color: orange;
-      height: 150px;
-    }
-    .grid-box {
-      background-color: blue;
-      height: 50px;
+    * {
+      text-align: center;
     }
   </style>
-</head>
-<body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 header"></div>
-    </div>
+  <body>
+    <div class="container">
+      <!-- Fila 1: Header -->
+      <div class="row">
+        <div class="col-12 bg-success text-white">Header</div>
+      </div>
 
-    <div class="row">
-      <div class="col-lg-2 col-md-2 col-sm-3 col-12 sidebar"></div>
+      <div class="row mt-3" style="height: 250px">
+        <div class="col-6 col-md-3 offset-md-3 bg-primary text-white mb-2">1</div>
+        <div class="col-6 col-md-3 bg-primary text-white mb-2">2</div>
 
-      <div class="col-lg-10 col-md-10 col-sm-9 col-12">
-        <div class="row">
-          <div class="col-12 top-bar"></div>
-        </div>
+        <div class="w-100 d-none d-md-block"></div>
+        <div class="col-6 col-md-3 bg-primary text-white mb-2">3</div>
 
-        <div class="row">
-          <div class="col-md-6 col-sm-12 col-12 content"></div>
-          <div class="col-md-6 col-sm-12 col-12 content"></div>
-        </div>
+        <div class="col-6 col-md-3 offset-md-6 bg-primary text-white mb-2">4</div>
+      </div>
 
-        <div class="row">
-          <div class="col-md-2 col-sm-4 col-6 grid-box"></div>
-          <div class="col-md-2 col-sm-4 col-6 grid-box"></div>
-          <div class="col-md-4 col-sm-4 col-6  grid-box"></div>
-          <div class="col-md-2 col-sm-4 col-6 grid-box"></div>
-          <div class="col-md-2 col-sm-4 col-6 grid-box"></div>
-          <div class="col-md-2 col-sm-4 col-6 grid-box"></div>
-          <div class="col-md-2 col-sm-4 col-6 grid-box"></div>
-          <div class="col-md-4 col-sm-4 col-6  grid-box"></div>
-          <div class="col-md-2 col-sm-4 col-6 grid-box"></div>
-          <div class="col-md-2 col-sm-4 col-6 grid-box"></div>
-        </div>
+      <!-- Fila 3: a,b,c,d con ordering en md -->
+      <div class="row mt-3" style="height: 150px">
+        <!-- Aquí definimos el orden distinto en md o lg -->
+        <div class="col-6 col-md order-md-2 bg-secondary text-white mb-2">a</div>
+        <div class="col-6 col-md order-md-1 bg-secondary text-white mb-2">b</div>
+        <div class="col-6 col-md order-md-4 bg-secondary text-white mb-2">c</div>
+        <div class="col-6 col-md order-md-3 bg-secondary text-white mb-2">d</div>
+      </div>
+
+      <!-- Fila azul claro / “Desktop”, “Tablet”, “Mobile” -->
+      <!-- Realmente 3 filas, cada una visible solo en el rango que le toque -->
+
+      <!-- Desktop (md o lg) -->
+      <div class="row d-none d-md-block mt-3">
+        <div class="col-12 bg-info text-white">Desktop</div>
+      </div>
+
+      <!-- Tablet (solo sm) -->
+      <div class="row d-none d-sm-block d-md-none mt-3">
+        <div class="col-12 bg-info text-white">Tablet</div>
+      </div>
+
+      <div class="row d-block d-sm-none mt-3">
+        <div class="col-12 bg-info text-white">Mobile</div>
+      </div>
+
+      <div class="row mt-3 bg-warning">
+        <div class="col-6 col-md-4 order-md-2 p-3">:D</div>
+        <div class="col-6 col-md-4 order-md-1 p-3">:(</div>
+        <!-- Col 3, oculto en xs (d-none d-sm-block) -->
+        <!-- <div class="col-6 col-md-4 d-none d-sm-block p-3">Esta columna NO se ve en xs</div> -->
+      </div>
+
+      <!-- Fila final (oculta en xs) -->
+      <div class="row mt-3 d-none d-sm-flex">
+        <div class="col-12 bg-success text-white">Footer</div>
       </div>
     </div>
 
-    <!-- Footer -->
-    <div class="row">
-      <div class="col-12 footer"></div>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <!-- Scripts de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- O si usas v5, ajusta las rutas a las correspondientes -->
+  </body>
 </html>
