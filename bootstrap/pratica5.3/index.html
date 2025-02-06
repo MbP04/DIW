@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ejemplo Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <style>
+      * {
+        text-align: center;
+      }
+
+      /* Añadir altura a las cajas */
+      .bg-primary, .bg-secondary, .bg-info, .bg-warning, .bg-success {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Header -->
+      <div class="row">
+        <div class="col-12 bg-success text-white">Header</div>
+      </div>
+
+      <!-- Fila de números (1, 2, 3, 4) -->
+      <div class="row mt-3">
+        <div class="col-6 col-sm-3 col-md-3 offset-md-3 bg-primary text-white mb-2">1</div>
+        <div class="col-6 col-sm-3 col-md-3 bg-primary text-white mb-2">2</div>
+        <div class="w-100 d-none d-md-block"></div>
+        <div class="col-6 col-sm-3 col-md-3 bg-primary text-white mb-2">3</div>
+        <div class="col-6 col-sm-3 col-md-3 offset-md-6 bg-primary text-white mb-2">4</div>
+      </div>
+
+      <!-- Fila con letras (a, b, c, d) con orden cambiado en md -->
+      <div class="row mt-3">
+        <div class="col-6 col-md order-md-2 bg-secondary text-white mb-2">a</div>
+        <div class="col-6 col-md order-md-1 bg-secondary text-white mb-2">b</div>
+        <div class="col-6 col-md order-md-4 bg-secondary text-white mb-2">c</div>
+        <div class="col-6 col-md order-md-3 bg-secondary text-white mb-2">d</div>
+      </div>
+
+      <!-- Fila azul claro: Desktop / Tablet / Mobile -->
+      <div class="row d-none d-md-block mt-3">
+        <div class="col-12 bg-info text-white">Desktop</div>
+      </div>
+      <div class="row d-none d-sm-block d-md-none mt-3">
+        <div class="col-12 bg-info text-white">Tablet</div>
+      </div>
+      <div class="row d-block d-sm-none mt-3">
+        <div class="col-12 bg-info text-white">Mobile</div>
+      </div>
+
+      <!-- Fila naranja con orden, desplazamiento y ocultación en xs -->
+      <div class="row mt-3 justify-content-center ">
+        <div class="col-12 col-sm-6 col-md-3 order-md-2 bg-warning p-3 mx-md-2">:D</div>
+        <div class="col-12 col-sm-6 col-md-3 order-md-1 bg-warning p-3 mx-md-2 d-none d-sm-block">:(</div>
+      </div>
+        
+      <!-- Footer oculto en xs -->
+      <div class="row mt-3 d-none d-sm-flex">
+        <div class="col-12 bg-success text-white">Footer</div>
+      </div>
+    </div>
+  </body>
+</html>

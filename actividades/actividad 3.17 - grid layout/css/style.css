@@ -1,0 +1,55 @@
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Navbar, Contenido (Main), Footer */
+  grid-template-columns: 1fr; /* Una columna para todo */
+  background-color: #eee4e4;
+  gap: 10px;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  padding: 15px;
+  gap: 10px; /* Agrega espacio entre las columnas del navbar */
+}
+
+.navbar div {
+  background-color: #beb1b1;
+  text-align: center;
+  padding: 10px;
+}
+
+.header {
+  display: grid;
+  background-color: #413e3e;
+  color: #7a7474;
+  padding: 20px;
+  grid-column: 1 / -1; /* Se extiende a través de toda la columna */
+}
+
+.banner-a {
+  background-color: #221e1e;
+  color: #fff;
+  padding: 20px;
+}
+
+.banner-b {
+  background-color: #9e8f8f;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Igual que el navbar, divide en 6 columnas */
+  gap: 10px; /* Espacio entre las columnas */
+  background-color: #beb1b1;
+  padding: 15px;
+  grid-column: 1 / -1; /* Se extiende a través de toda la columna */
+}
+
+.footer div {
+  background-color: #7a7474; /* Diferente color para las secciones del footer */
+  text-align: center;
+  padding: 10px;
+}
