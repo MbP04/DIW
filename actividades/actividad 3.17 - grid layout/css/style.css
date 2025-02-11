@@ -1,7 +1,7 @@
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
-  grid-template-columns: 1fr; /* Una columna para todo */
+  grid-template-columns: 1fr; 
   background-color: #eee4e4;
   gap: 10px;
 }
@@ -9,7 +9,7 @@ body {
 .navbar {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  gap: 10px; /* Agrega espacio entre las columnas del navbar */
+  gap: 10px; 
 }
 
 .navbar div {
@@ -23,7 +23,6 @@ body {
   background-color: #413e3e;
   color: #7a7474;
   padding: 20px;
-  grid-column: 1 / -1; /* Se extiende a través de toda la columna */
 }
 
 .banner-a {
@@ -34,18 +33,18 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr; /* Aside ocupa 1 parte, Main ocupa 2 partes */
-  gap: 10px; /* Espacio entre columnas */
+  grid-template-columns: 1fr 2fr; 
+  gap: 10px; 
 }
 
 aside {
-  background-color: #b3b3b3; /* Gris claro */
+  background-color: #b3b3b3; 
   padding: 20px;
   font-weight: bold;
 }
 
 main {
-  background-color: #e6e6e6; /* Gris más claro */
+  background-color: #e6e6e6; 
   padding: 20px;
 }
 
@@ -59,15 +58,32 @@ main {
 
 .footer {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Igual que el navbar, divide en 6 columnas */
-  gap: 10px; /* Espacio entre las columnas */
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 10px;
   background-color: #beb1b1;
   padding: 15px;
-  grid-column: 1 / -1; /* Se extiende a través de toda la columna */
 }
 
 .footer div {
-  background-color: #7a7474; /* Diferente color para las secciones del footer */
+  background-color: #7a7474; 
   text-align: center;
   padding: 10px;
 }
+
+
+@media (max-width: 768px) {
+  .navbar {
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, auto);
+  }
+
+  .container {
+    grid-template-columns: 1fr; 
+  }
+
+  .footer {
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto);
+  }
+}
+
