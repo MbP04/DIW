@@ -1,6 +1,6 @@
 body {
   display: grid;
-  grid-template-rows: auto 1fr auto; /* Navbar, Contenido (Main), Footer */
+  grid-template-rows: auto 1fr auto;
   grid-template-columns: 1fr; /* Una columna para todo */
   background-color: #eee4e4;
   gap: 10px;
@@ -9,7 +9,6 @@ body {
 .navbar {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  padding: 15px;
   gap: 10px; /* Agrega espacio entre las columnas del navbar */
 }
 
@@ -33,7 +32,26 @@ body {
   padding: 20px;
 }
 
-.banner-b {
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Aside ocupa 1 parte, Main ocupa 2 partes */
+  gap: 10px; /* Espacio entre columnas */
+}
+
+aside {
+  background-color: #b3b3b3; /* Gris claro */
+  padding: 20px;
+  font-weight: bold;
+}
+
+main {
+  background-color: #e6e6e6; /* Gris más claro */
+  padding: 20px;
+}
+
+
+.banner-d {
+  margin-top: 10px;
   background-color: #9e8f8f;
   color: #fff;
   padding: 20px;
@@ -41,7 +59,7 @@ body {
 
 .footer {
   display: grid;
-  grid-template-columns: repeat(6, 1fr); /* Igual que el navbar, divide en 6 columnas */
+  grid-template-columns: repeat(4, 1fr); /* Igual que el navbar, divide en 6 columnas */
   gap: 10px; /* Espacio entre las columnas */
   background-color: #beb1b1;
   padding: 15px;
