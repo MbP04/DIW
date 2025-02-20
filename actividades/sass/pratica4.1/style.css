@@ -1,0 +1,24 @@
+.contenedor__texto1__titulo {
+  color: orange;
+  text-align: center;
+}
+.contenedor__texto1__especial {
+  margin-bottom: 10px;
+}
+.contenedor__texto2__titulo {
+  text-decoration: underline;
+  color: rgb(69, 106, 131);
+  text-align: left;
+}
+.contenedor__texto2__parrafo {
+  text-align: right;
+}
+.contenedor__texto2__parrafo::first-line {
+  font-style: italic;
+}
+.contenedor__texto2__especial {
+  text-align: left;
+}
+.contenedor__texto2__especial::first-line {
+  font-style: italic;
+}/*# sourceMappingURL=style.css.map */

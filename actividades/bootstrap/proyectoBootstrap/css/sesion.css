@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+}
+
+.presentacion__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/*video centrado en la ventana*/
+video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+/*capa oscura transparente*/
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.bienvenida {
+  position: absolute;
+  z-index: 2;
+  padding: 20px 60px;
+  text-align: center;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  animation: fadeInOpacity 1.5s ease forwards;
+}
+
+.bienvenida h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.bienvenida p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.login {
+  position: absolute;
+  z-index: 2;
+  padding: 40px 60px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.1);
+  animation: fadeInOpacity 1.5s ease-in-out forwards;
+}
+
+.login__img {
+  width: 50%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.login h3 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+/*Formulario*/
+.input__contenedor {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease-in-out;
+}
+
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: contain;
+}
+
+/*crece el contendor del input al estar en el (focus)*/
+.input__contenedor:has(input:focus) {
+  transform: scaleX(1.05);
+}
+
+.input__contenedor input:required {
+  background-image: url("../images/obligatorio.png");
+}
+
+.input__contenedor input:valid {
+  background-image: url("../images/valido.png");
+}
+
+.input__contenedor input:focus:invalid {
+  background-image: url("../images/invalido.png");
+}
+
+.login__botones {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.boton {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #5d83ae;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.boton:hover {
+  background-color: #113c71;
+}
+
+.boton:active {
+  transform: scale(0.95);
+}
+
+@keyframes fadeInOpacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 650px) {
+  .login {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .bienvenida h1 {
+    margin-top: 50px;
+    font-size: 2rem;
+  }
+
+  .bienvenida p {
+    display: none;
+  }
+}

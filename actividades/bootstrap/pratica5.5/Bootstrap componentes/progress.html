@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap 5</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+    <style>
+      .list-group-item:nth-child(1) {
+        background-color: #ffadad;
+      } /* Rojo claro */
+      .list-group-item:nth-child(2) {
+        background-color: #ffd6a5;
+        font-weight: bold;
+      } /* Naranja claro - ACTIVO */
+      .list-group-item:nth-child(3) {
+        background-color: #fdffb6;
+      } /* Amarillo claro */
+      .list-group-item:nth-child(4) {
+        background-color: #caffbf;
+      } /* Verde claro */
+      .list-group-item:nth-child(5) {
+        background-color: #9bf6ff;
+      } /* Azul claro */
+    </style>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h3 class="mb-3">Lista de Grupos de Música</h3>
+      <ol class="list-group list-group-numbered">
+        <li class="list-group-item">
+          <a href="https://www.therollingstones.com/" target="_blank" class="text-dark text-decoration-none"
+            >The Rolling Stones</a
+          >
+        </li>
+        <li class="list-group-item active">
+          <a href="https://www.ledzeppelin.com/" target="_blank" class="text-dark text-decoration-none">Led Zeppelin</a>
+        </li>
+        <li class="list-group-item">
+          <a href="https://www.pinkfloyd.com/" target="_blank" class="text-dark text-decoration-none">Pink Floyd</a>
+        </li>
+        <li class="list-group-item">
+          <a href="https://www.queenonline.com/" target="_blank" class="text-dark text-decoration-none">Queen</a>
+        </li>
+        <li class="list-group-item">
+          <a href="https://www.u2.com/" target="_blank" class="text-dark text-decoration-none">U2</a>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>

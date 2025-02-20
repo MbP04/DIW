@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout Responsivo</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <style>
+    *{
+    border: 1px solid white;   
+    }
+    .header, .footer {
+      background-color: limegreen;
+      height: 50px;
+    }
+    .sidebar {
+      background-color: red;
+    }
+    .top-bar {
+      background-color: hotpink;
+      height: 50px;
+    }
+    .content {
+      background-color: orange;
+      height: 150px;
+    }
+    .grid-box {
+      background-color: blue;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-12 header"></div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-2 col-md-2 col-sm-3 col-12 sidebar"></div>
+
+      <div class="col-lg-10 col-md-10 col-sm-9 col-12">
+        <div class="row">
+          <div class="col-12 top-bar"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-sm-12 col-12 content"></div>
+          <div class="col-md-6 col-sm-12 col-12 content"></div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-2 col-sm-4 col-6 grid-box"></div>
+          <div class="col-md-2 col-sm-4 col-6 grid-box"></div>
+          <div class="col-md-4 col-sm-4 col-6  grid-box"></div>
+          <div class="col-md-2 col-sm-4 col-6 grid-box"></div>
+          <div class="col-md-2 col-sm-4 col-6 grid-box"></div>
+          <div class="col-md-2 col-sm-4 col-6 grid-box"></div>
+          <div class="col-md-2 col-sm-4 col-6 grid-box"></div>
+          <div class="col-md-4 col-sm-4 col-6  grid-box"></div>
+          <div class="col-md-2 col-sm-4 col-6 grid-box"></div>
+          <div class="col-md-2 col-sm-4 col-6 grid-box"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="row">
+      <div class="col-12 footer"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
