@@ -17,51 +17,7 @@
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/fotos.css" />
-    <style>
-      /* Ajustes adicionales para esta página */
-      body {
-        background: #f8f9fa;
-      }
-      /* Navbar */
-      .navbar {
-        background-color: #286a91 !important;
-      }
-      .navbar-brand img {
-        height: 50px;
-      }
-      /* Encabezado de la página */
-      .presentacion__global {
-        background: #e9ecef;
-        padding: 2rem 1rem;
-        text-align: center;
-        margin-top: 80px;
-        color: #286a91;
-      }
-      .presentacion__global__titulo {
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
-      }
-      .presentacion__global__texto {
-        font-size: 1.25rem;
-      }
-      /* Galería de fotos */
-      .gallery img {
-        width: 100%;
-        height: auto;
-        object-fit: cover;
-      }
-      /* Footer */
-      footer {
-        background: #286a91;
-        color: #fff;
-        padding: 1rem 0;
-      }
-      footer a {
-        color: #fff;
-        text-decoration: none;
-      }
-    </style>
-    <script src="../js/script.js"></script>
+    
   </head>
   <body>
     <!-- HEADER & NAVBAR -->
@@ -83,7 +39,7 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+          <div class="collapse navbar-collapse justify-content-end text-center" id="navbarContent">
             <ul class="navbar-nav">
               <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
               <li class="nav-item"><a class="nav-link" href="./sobreNosotros.html">Nuestro Equipo</a></li>
@@ -101,9 +57,9 @@
 
     <!-- MENSAJE DE PRESENTACIÓN -->
     <div class="container mt-5 pt-5">
-      <div class="presentacion__global">
-        <h2 class="presentacion__global__titulo">¡Nuestra galería!</h2>
-        <p class="presentacion__global__texto">
+      <div class="presentacion-global rounded-3">
+        <h2>¡Nuestra galería!</h2>
+        <p>
           Descubre algunos de los mejores momentos capturados en imágenes.
         </p>
       </div>
@@ -111,28 +67,39 @@
 
     <!-- GALERÍA DE FOTOS -->
     <div class="container my-4">
-      <div class="row g-3">
+      <div class="row g-3 gallery">
         <!-- Cada imagen se coloca en una columna responsive -->
         <div class="col-12 col-sm-6 col-md-4">
-          <img src="../images/galeria/imagen1.jpg" alt="Imagen 1" class="img-fluid rounded" />
+          <img src="../images/galeria/imagen1.jpg" alt="Imagen 1" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#fotoModal" />
         </div>
         <div class="col-12 col-sm-6 col-md-4">
-          <img src="../images/galeria/imagen2.jpg" alt="Imagen 2" class="img-fluid rounded" />
+          <img src="../images/galeria/imagen2.jpg" alt="Imagen 2" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#fotoModal" />
         </div>
         <div class="col-12 col-sm-6 col-md-4">
-          <img src="../images/galeria/imagen3.jpg" alt="Imagen 3" class="img-fluid rounded" />
+          <img src="../images/galeria/imagen3.jpg" alt="Imagen 3" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#fotoModal" />
         </div>
         <div class="col-12 col-sm-6 col-md-4">
-          <img src="../images/galeria/imagen4.jpg" alt="Imagen 4" class="img-fluid rounded" />
+          <img src="../images/galeria/imagen4.jpg" alt="Imagen 4" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#fotoModal" />
         </div>
         <div class="col-12 col-sm-6 col-md-4">
-          <img src="../images/galeria/imagen5.jpg" alt="Imagen 5" class="img-fluid rounded" />
+          <img src="../images/galeria/imagen5.jpg" alt="Imagen 5" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#fotoModal" />
         </div>
         <div class="col-12 col-sm-6 col-md-4">
-          <img src="../images/galeria/imagen6.jpg" alt="Imagen 6" class="img-fluid rounded" />
+          <img src="../images/galeria/imagen6.jpg" alt="Imagen 6" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#fotoModal" />
         </div>
         <div class="col-12 col-sm-6 col-md-4">
-          <img src="../images/galeria/imagen7.jpg" alt="Imagen 7" class="img-fluid rounded" />
+          <img src="../images/galeria/imagen7.jpg" alt="Imagen 7" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#fotoModal" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="fotoModal" tabindex="-1" aria-labelledby="fotoModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img src="" alt="Imagen ampliada" class="img-fluid" id="modalImagen" />
+          </div>
         </div>
       </div>
     </div>
@@ -145,14 +112,14 @@
         <div class="d-flex justify-content-center">
           <a
             href="https://www.facebook.com/p/Juniors-Sant-Lluis-Bertran-100010418111626/?locale=es_ES"
-            class="me-2"
+            class="me-2" aria-label="Facebook"
           >
             <img src="../images/icono_facebook.png" alt="Facebook" style="width: 32px;" />
           </a>
-          <a href="https://www.instagram.com/juniorsantlluis/?hl=es" class="me-2">
+          <a href="https://www.instagram.com/juniorsantlluis/?hl=es" class="me-2" aria-label="Instagram">
             <img src="../images/icono_insta.png" alt="Instagram" style="width: 32px;" />
           </a>
-          <a href="https://www.youtube.com/@juniorssanluisbertran6525">
+          <a href="https://www.youtube.com/@juniorssanluisbertran6525" aria-label="YouTube">
             <img src="../images/youtube.png" alt="YouTube" style="width: 32px;" />
           </a>
         </div>
@@ -163,5 +130,16 @@
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     ></script>
+    <script>
+      // JavaScript para el Modal de las imágenes
+      const imagenes = document.querySelectorAll('.gallery img');
+      const modalImagen = document.getElementById('modalImagen');
+      
+      imagenes.forEach(img => {
+        img.addEventListener('click', () => {
+          modalImagen.src = img.src;
+        });
+      });
+    </script>
   </body>
 </html>

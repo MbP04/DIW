@@ -1,0 +1,50 @@
+      /* Estilos adicionales */
+      body {
+        background: #f8f9fa;
+      }
+      .navbar {
+        background-color: #286a91 !important;
+        transition: background-color 0.3s ease;
+      }
+      .navbar.scrolled {
+        background-color: #1c4e6d !important;
+      }
+      header {
+        background: #286a91;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .card {
+        border: none;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+      }
+      .card-img-top {
+        height: 250px;
+        object-fit: cover;
+      }
+      .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #286a91;
+      }
+      .card-text {
+        color: #555;
+      }
+      footer {
+        background: #286a91;
+        color: #fff;
+        padding: 2rem 0;
+      }
+      footer a {
+        color: #fff;
+        text-decoration: none;
+        transition: opacity 0.3s ease;
+      }
+      footer a:hover {
+        opacity: 0.8;
+      }

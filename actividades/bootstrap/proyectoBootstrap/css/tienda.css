@@ -1,0 +1,30 @@
+body {
+  background: #f8f9fa;
+}
+header {
+  background-color: #286a91;
+}
+.jumbotron {
+  background: #286a91;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.product-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+.badge {
+  font-size: 0.9rem;
+}
+footer {
+  background: #286a91;
+  color: #fff;
+  padding: 1rem 0;
+}
+footer a {
+  color: #fff;
+  text-decoration: none;
+}

@@ -1,0 +1,31 @@
+      /* Ajustes adicionales para esta página */
+      body {
+        background: #f8f9fa;
+      }
+      /* Navbar */
+      .navbar {
+        background-color: #286a91 !important;
+      }
+      .navbar-brand img {
+        height: 50px;
+      }
+      /* Galería de fotos */
+      .gallery img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+      }
+      .gallery img:hover {
+        transform: scale(1.05);
+      }
+      /* Footer */
+      footer {
+        background: #286a91;
+        color: #fff;
+        padding: 1rem 0;
+      }
+      footer a {
+        color: #fff;
+        text-decoration: none;
+      }

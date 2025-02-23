@@ -2,83 +2,30 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Juniors Sant Lluis</title>
     <link rel="icon" href="./images/icono.png" />
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Animate.css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- Custom CSS (normalize + style) -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
-    <style>
-      /* Ajustes adicionales para integrar tu contenido con Bootstrap */
-      header {
-        background: #286a91;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        position: sticky;
-        top: 0;
-        z-index: 999;
-      }
-      /* Forzamos fondo transparente en el navbar */
-      .navbar {
-        background-color: #286a91 !important;
-      }
-
-      .navbar-brand img {
-        height: 50px;
-      }
-      /* Carrusel de presentación */
-      #presentacion {
-        position: relative;
-        height: 70vh;
-        min-height: 400px;
-        overflow: hidden;
-      }
-      #heroCarousel .carousel-item {
-        min-height: 600px; /* Asegúrate de ver la imagen */
-        background-size: cover;
-        background-position: center;
-      }
-      /* Capa negra semitransparente */
-      .carousel-overlay {
-        height: 600px; /* Asegúrate de ver la imagen */
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 2;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 0 15px;
-      }
-      .article__valores img.jesus {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto 20px;
-      }
-      .ubicacion iframe {
-        width: 100%;
-        height: 300px;
-        border: 0;
-      }
-      .aside__eventos li {
-        margin-bottom: 1rem;
-      }
-      footer {
-        background: #286a91;
-        color: #fff;
-      }
-      footer a {
-        color: #fff;
-        text-decoration: none;
-      }
-    </style>
     <script src="./js/script.js"></script>
   </head>
 
@@ -87,8 +34,16 @@
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-          <a class="navbar-brand d-flex align-items-center" href="../index.html">
-            <img src="./images/logo.png" alt="Logo" class="me-2" style="height: 50px" />
+          <a
+            class="navbar-brand d-flex align-items-center"
+            href="../index.html"
+          >
+            <img
+              src="./images/logo.png"
+              alt="Logo"
+              class="me-2"
+              style="height: 50px"
+            />
             <strong>Juniors Sant Lluis</strong>
           </a>
           <button
@@ -102,17 +57,36 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+          <div
+            class="collapse navbar-collapse justify-content-end text-center"
+            id="navbarContent"
+          >
             <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
               <li class="nav-item">
-                <a class="nav-link" href="./paginas/sobreNosotros.html">Nuestro Equipo</a>
+                <a class="nav-link active" href="index.html">Inicio</a>
               </li>
-              <li class="nav-item"><a class="nav-link" href="./paginas/tienda.html">Tienda</a></li>
-              <li class="nav-item"><a class="nav-link" href="./paginas/fotos.html">Fotos</a></li>
-              <li class="nav-item"><a class="nav-link" href="./paginas/secretaria.html">Secretaria</a></li>
               <li class="nav-item">
-                <a class="btn btn-outline-light ms-3" href="./paginas/sesion.html">Iniciar Sesión</a>
+                <a class="nav-link" href="./paginas/sobreNosotros.html"
+                  >Nuestro Equipo</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/tienda.html">Tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/fotos.html">Fotos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./paginas/secretaria.html"
+                  >Secretaria</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="btn btn-outline-light ms-3"
+                  href="./paginas/sesion.html"
+                  >Iniciar Sesión</a
+                >
               </li>
             </ul>
           </div>
@@ -124,117 +98,192 @@
     <main>
       <section id="presentacion">
         <!-- Carrusel automático -->
-        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div
+          id="heroCarousel"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
           <!-- Slides del carrusel -->
           <div class="carousel-inner">
-            <div class="carousel-item active" style="background-image: url('./images/galeria/imagen1.jpg')"></div>
-            <div class="carousel-item" style="background-image: url('./images/galeria/imagen2.jpg')"></div>
-            <div class="carousel-item" style="background-image: url('./images/galeria/imagen3.jpg')"></div>
-            <div class="carousel-item" style="background-image: url('./images/galeria/imagen4.jpg')"></div>
-            <div class="carousel-item" style="background-image: url('./images/galeria/imagen5.jpg')"></div>
-            <div class="carousel-item" style="background-image: url('./images/galeria/imagen6.jpg')"></div>
-            <div class="carousel-item" style="background-image: url('./images/galeria/imagen7.jpg')"></div>
+            <div
+              class="carousel-item active"
+              style="background-image: url('./images/galeria/imagen1.jpg')"
+            ></div>
+            <div
+              class="carousel-item"
+              style="background-image: url('./images/galeria/imagen2.jpg')"
+            ></div>
+            <div
+              class="carousel-item"
+              style="background-image: url('./images/galeria/imagen3.jpg')"
+            ></div>
+            <div
+              class="carousel-item"
+              style="background-image: url('./images/galeria/imagen4.jpg')"
+            ></div>
+            <div
+              class="carousel-item"
+              style="background-image: url('./images/galeria/imagen5.jpg')"
+            ></div>
+            <div
+              class="carousel-item"
+              style="background-image: url('./images/galeria/imagen6.jpg')"
+            ></div>
+            <div
+              class="carousel-item"
+              style="background-image: url('./images/galeria/imagen7.jpg')"
+            ></div>
           </div>
         </div>
         <!-- Capa de superposición para mejorar la legibilidad del texto -->
         <div class="carousel-overlay animate__animated animate__fadeInUp">
           <div class="text-white">
-            <h1 class="display-4">Bienvenidos a los Juniors de Sant Lluís Bertran !!!</h1>
-            <p class="lead">Descubre un lugar donde los valores, la amistad y la aventura se encuentran.</p>
+            <h1 class="display-4">
+              Bienvenidos a los Juniors de Sant Lluís Bertran !!!
+            </h1>
+            <p class="lead">
+              Descubre un lugar donde los valores, la amistad y la aventura se
+              encuentran.
+            </p>
           </div>
         </div>
       </section>
 
       <!-- Resto del contenido -->
       <!-- ARTÍCULO CON VALORES -->
-      <section class="py-5">
-        <div class="container">
-          <div class="row g-4">
-            <div class="col-md-4 text-center">
-              <img src="./images/jesus.png" class="img-fluid animate__animated animate__fadeInUp" alt="Jesus" />
-            </div>
-            <div class="col-md-8">
-              <h3 class="mb-4 animate__animated animate__fadeInUp">
-                ¡Descubre los valores que promovemos y lo que hacemos!
-              </h3>
-              <div class="list-group">
-                <div class="list-group-item animate__animated animate__fadeInUp">
-                  <strong>Educación en Valores</strong>: A través de dinámicas y actividades, enseñamos respeto,
-                  solidaridad, trabajo en equipo...
-                </div>
-                <div class="list-group-item animate__animated animate__fadeInUp">
-                  <strong>Amistades para toda la vida</strong>: En nuestros encuentros semanales y campamentos, los
-                  niños tienen la oportunidad de hacer nuevas amistades.
-                </div>
-                <div class="list-group-item animate__animated animate__fadeInUp">
-                  <strong>Actividades al aire libre</strong>: Excursiones, juegos, y campamentos donde la naturaleza es
-                  el escenario perfecto para aprender y divertirse.
-                </div>
-                <div class="list-group-item animate__animated animate__fadeInUp">
-                  <strong>Ambiente seguro y supervisado</strong>
-                </div>
-                <div class="list-group-item animate__animated animate__fadeInUp">
-                  <strong>Compromiso con la comunidad</strong>: Los Juniors de Sant Lluís Bertran están arraigados en la
-                  comunidad local, promoviendo el servicio y la participación activa.
-                </div>
-              </div>
-            </div>
-          </div>
+      <article class="article">
+        <div class="article__info">
+          <h3>¡Descubre los valores que promovemos y lo que hacemos!</h3>
         </div>
-      </section>
+        <div class="article__valores">
+          <img class="jesus" src="./images/jesus.png" alt="Jesus" />
+          <main class="valores__lista">
+            <article class="lista__item">
+              <p>
+                <strong>Educación en Valores</strong>: A través de dinámicas y
+                actividades, enseñamos respeto, solidaridad, trabajo en
+                equipo...
+              </p>
+            </article>
+            <article class="lista__item">
+              <p>
+                <strong>Amistades para toda la vida</strong>: En nuestros
+                encuentros semanales y campamentos, los niños tienen la
+                oportunidad de hacer nuevas amistades.
+              </p>
+            </article>
+            <article class="lista__item">
+              <p>
+                <strong>Actividades al aire libre</strong>: Excursiones, juegos,
+                y campamentos donde la naturaleza es el escenario perfecto para
+                aprender y divertirse.
+              </p>
+            </article>
+            <article class="lista__item">
+              <p><strong>Ambiente seguro y supervisado</strong></p>
+            </article>
+            <article class="lista__item">
+              <p>
+                <strong>Compromiso con la comunidad</strong>: Los Juniors de
+                Sant Lluís Bertran están arraigados en la comunidad local,
+                promoviendo el servicio y la participación activa.
+              </p>
+            </article>
+          </main>
+        </div>
+      </article>
 
       <!-- UBICACIÓN Y EVENTOS -->
       <section class="py-5 bg-light">
         <div class="container">
           <div class="row g-5">
+            <!-- HORARIOS Y UBICACIÓN -->
             <div class="col-lg-8">
-              <div class="mb-4">
-                <h3>Horarios</h3>
-                <ul class="list-unstyled">
-                  <li><strong>Todos los sábados de 16:00 a 20:20</strong></li>
-                  <li><strong>Taller de Guitarra</strong>: de 16:00 a 17:00</li>
-                  <li><strong>Actividad conjunta (Ambientación)</strong>: de 17:00 a 18:00</li>
-                  <li><strong>Actividad por etapas</strong>: de 18:00 a 19:15</li>
-                  <li><strong>Misa</strong>: de 19:30 a 20:20</li>
-                </ul>
+              <div class="card border-0 shadow-sm mb-4 card-personalizada">
+                <div class="card-body">
+                  <h3 class="card-title titulo-personalizado">
+                    <i class="bi bi-clock-fill me-2"></i>Horarios
+                  </h3>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                      <i class="bi bi-calendar-event me-2 text-success"></i
+                      ><strong>Todos los sábados:</strong> 16:00 - 20:20
+                    </li>
+                    <li class="list-group-item">
+                      <i class="bi bi-music-note-beamed me-2 text-warning"></i
+                      ><strong>Taller de Guitarra:</strong> 16:00 - 17:00
+                    </li>
+                    <li class="list-group-item">
+                      <i class="bi bi-people-fill me-2 text-info"></i
+                      ><strong>Actividad conjunta:</strong> 17:00 - 18:00
+                    </li>
+                    <li class="list-group-item">
+                      <i class="bi bi-flag-fill me-2 text-danger"></i
+                      ><strong>Actividad por etapas:</strong> 18:00 - 19:15
+                    </li>
+                    <li class="list-group-item">
+                      <i class="bi bi-book-half me-2 text-primary"></i
+                      ><strong>Misa:</strong> 19:30 - 20:20
+                    </li>
+                  </ul>
+                </div>
               </div>
-              <div>
-                <h3>Ubicación</h3>
-                <div class="ratio ratio-16x9">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3108.3617058687177!2d-0.4717771245842293!3d39.43797708361092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6051c9e0354035%3A0x2b17c3599f9b7e3b!2sParroquia%20de%20San%20Luis%20Bertr%C3%A1n!5e0!3m2!1ses!2ses!4v1690721234567!5m2!1ses!2ses"
-                    loading="lazy"
-                    title="Ubicación de la Parroquia San Luis Bertrán"
-                  ></iframe>
+
+              <div class="card border-0 shadow-sm card-personalizada">
+                <div class="card-body">
+                  <h3 class="card-title titulo-personalizado">
+                    <i class="bi bi-geo-alt-fill me-2"></i>Ubicación
+                  </h3>
+                  <div
+                    class="ratio ratio-16x9 rounded-3 overflow-hidden shadow"
+                  >
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3108.3617058687177!2d-0.4717771245842293!3d39.43797708361092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6051c9e0354035%3A0x2b17c3599f9b7e3b!2sParroquia%20de%20San%20Luis%20Bertr%C3%A1n!5e0!3m2!1ses!2ses!4v1690721234567!5m2!1ses!2ses"
+                      loading="lazy"
+                      title="Ubicación de la Parroquia San Luis Bertrán"
+                      class="border-0"
+                    ></iframe>
+                  </div>
                 </div>
               </div>
             </div>
+
+            <!-- PRÓXIMOS EVENTOS -->
             <div class="col-lg-4">
-              <h3 class="mb-4">Próximos Eventos</h3>
-              <div class="list-group">
+              <h3 class="text-primary mb-4 text-center titulo-personalizado">
+                <i class="bi bi-calendar-event-fill me-2"></i>Próximos Eventos
+              </h3>
+              <div class="list-group shadow-sm">
                 <div class="list-group-item">
-                  <strong>Campamento de Invierno:</strong><br />
-                  Del 20 al 23 de enero.
-                  <div class="mt-2">
-                    <video controls class="w-100">
-                      <source src="./videos/curso.mp4" type="video/mp4" />
-                      Tu navegador no soporta el video.
-                    </video>
-                  </div>
+                  <h5 class="mb-1">
+                    <i class="bi bi-tree-fill me-2 text-success"></i>Campamento
+                    de Invierno
+                  </h5>
+                  <p class="mb-1">Del 20 al 23 de enero</p>
+                  <video controls class="w-100 rounded-3 shadow-sm">
+                    <source src="./videos/curso.mp4" type="video/mp4" />
+                    Tu navegador no soporta el video.
+                  </video>
                 </div>
+
                 <div class="list-group-item">
-                  <strong>Reunión de padres:</strong><br />
-                  Sábado 13 de enero a las 17:00.
+                  <h5 class="mb-1">
+                    <i class="bi bi-people-fill me-2 text-info"></i>Reunión de
+                    padres
+                  </h5>
+                  <p class="mb-1">Sábado 13 de enero a las 17:00</p>
                 </div>
+
                 <div class="list-group-item">
-                  <strong>Festival de la canción:</strong><br />
-                  ¡Apréndete la canción!
-                  <div class="mt-2">
-                    <audio controls class="w-100">
-                      <source src="./audios/cancion.mp3" type="audio/mpeg" />
-                      Tu navegador no soporta el elemento de audio.
-                    </audio>
-                  </div>
+                  <h5 class="mb-1">
+                    <i class="bi bi-music-note-list me-2 text-warning"></i
+                    >Festival de la canción
+                  </h5>
+                  <p class="mb-1">¡Apréndete la canción!</p>
+                  <audio controls class="w-100 rounded-3 ">
+                    <source src="./audios/cancion.mp3" type="audio/mpeg" />
+                    Tu navegador no soporta el elemento de audio.
+                  </audio>
                 </div>
               </div>
             </div>
@@ -249,11 +298,23 @@
         <p class="mb-1">Juniors Sant Lluis Bertran</p>
         <a href="./documentos/guia.pdf" class="d-block mb-2">Guia de estilo</a>
         <div>
-          <a href="https://www.facebook.com/p/Juniors-Sant-Lluis-Bertran-100010418111626/?locale=es_ES">
-            <img src="./images/icono_facebook.png" alt="Facebook" class="me-2" style="width: 32px" />
+          <a
+            href="https://www.facebook.com/p/Juniors-Sant-Lluis-Bertran-100010418111626/?locale=es_ES"
+          >
+            <img
+              src="./images/icono_facebook.png"
+              alt="Facebook"
+              class="me-2"
+              style="width: 32px"
+            />
           </a>
           <a href="https://www.instagram.com/juniorsantlluis/?hl=es">
-            <img src="./images/icono_insta.png" alt="Instagram" class="me-2" style="width: 32px" />
+            <img
+              src="./images/icono_insta.png"
+              alt="Instagram"
+              class="me-2"
+              style="width: 32px"
+            />
           </a>
           <a href="https://www.youtube.com/@juniorssanluisbertran6525">
             <img src="./images/youtube.png" alt="YouTube" style="width: 32px" />
