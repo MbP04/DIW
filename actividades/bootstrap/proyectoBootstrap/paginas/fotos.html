@@ -68,37 +68,132 @@
     <!-- GALERÍA DE FOTOS -->
     <div class="container my-4">
       <div class="row g-3 gallery">
-        <!-- Cada imagen se coloca en una columna responsive -->
+        <!-- Cada imagen tiene su propio data-bs-target vinculado a su propio modal -->
         <div class="col-12 col-sm-6 col-md-4">
-          <img src="../images/galeria/imagen1.jpg" alt="Imagen 1" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#fotoModal" />
+          <img src="../images/galeria/imagen1.jpg" alt="Imagen 1" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#modal1" />
         </div>
         <div class="col-12 col-sm-6 col-md-4">
-          <img src="../images/galeria/imagen2.jpg" alt="Imagen 2" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#fotoModal" />
+          <img src="../images/galeria/imagen2.jpg" alt="Imagen 2" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#modal2" />
         </div>
         <div class="col-12 col-sm-6 col-md-4">
-          <img src="../images/galeria/imagen3.jpg" alt="Imagen 3" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#fotoModal" />
+          <img src="../images/galeria/imagen3.jpg" alt="Imagen 3" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#modal3" />
         </div>
         <div class="col-12 col-sm-6 col-md-4">
-          <img src="../images/galeria/imagen4.jpg" alt="Imagen 4" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#fotoModal" />
+          <img src="../images/galeria/imagen4.jpg" alt="Imagen 4" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#modal4" />
         </div>
         <div class="col-12 col-sm-6 col-md-4">
-          <img src="../images/galeria/imagen5.jpg" alt="Imagen 5" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#fotoModal" />
+          <img src="../images/galeria/imagen5.jpg" alt="Imagen 5" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#modal5" />
         </div>
         <div class="col-12 col-sm-6 col-md-4">
-          <img src="../images/galeria/imagen6.jpg" alt="Imagen 6" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#fotoModal" />
+          <img src="../images/galeria/imagen6.jpg" alt="Imagen 6" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#modal6" />
         </div>
         <div class="col-12 col-sm-6 col-md-4">
-          <img src="../images/galeria/imagen7.jpg" alt="Imagen 7" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#fotoModal" />
+          <img src="../images/galeria/imagen7.jpg" alt="Imagen 7" class="img-fluid rounded" data-bs-toggle="modal" data-bs-target="#modal7" />
         </div>
       </div>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="fotoModal" tabindex="-1" aria-labelledby="fotoModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
+    <!-- MODALES PARA CADA IMAGEN -->
+    <!-- Modal para imagen 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
         <div class="modal-content">
-          <div class="modal-body">
-            <img src="" alt="Imagen ampliada" class="img-fluid" id="modalImagen" />
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel1"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="../images/galeria/imagen1.jpg" alt="Imagen 1" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal para imagen 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel2"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="../images/galeria/imagen2.jpg" alt="Imagen 2" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal para imagen 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel3"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="../images/galeria/imagen3.jpg" alt="Imagen 3" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal para imagen 4 -->
+    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modalLabel4" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel4"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="../images/galeria/imagen4.jpg" alt="Imagen 4" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal para imagen 5 -->
+    <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modalLabel5" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel5"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="../images/galeria/imagen5.jpg" alt="Imagen 5" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal para imagen 6 -->
+    <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modalLabel6" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel6"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="../images/galeria/imagen6.jpg" alt="Imagen 6" class="img-fluid" />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal para imagen 7 -->
+    <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modalLabel7" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel7"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img src="../images/galeria/imagen7.jpg" alt="Imagen 7" class="img-fluid" />
           </div>
         </div>
       </div>
@@ -111,6 +206,8 @@
           <div class="col-md-4 mb-3 mb-md-0">
             <h5>Juniors Sant Lluis Bertran</h5>
             <p class="small">Centro juvenil comprometido con la educación en valores</p>
+            <img src="../images/logo.png" alt="logo juniors" width="100">
+
           </div>
           <div class="col-md-4 mb-3 mb-md-0">
             <h5>Enlaces rápidos</h5>
@@ -141,20 +238,9 @@
       </div>
     </footer>
 
-    <!-- Bootstrap Bundle JS -->
+    <!-- Bootstrap Bundle JS (solo se usa para el funcionamiento básico de Bootstrap) -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     ></script>
-    <script>
-      // JavaScript para el Modal de las imágenes
-      const imagenes = document.querySelectorAll('.gallery img');
-      const modalImagen = document.getElementById('modalImagen');
-      
-      imagenes.forEach(img => {
-        img.addEventListener('click', () => {
-          modalImagen.src = img.src;
-        });
-      });
-    </script>
   </body>
 </html>
