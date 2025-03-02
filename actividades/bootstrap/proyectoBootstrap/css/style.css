@@ -1,12 +1,6 @@
-/* ---------------------------------------------------------------------------
-   IMPORTACIÓN DE FUENTES
---------------------------------------------------------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* ---------------------------------------------------------------------------
-   RESET Y ESTILOS GLOBALES
---------------------------------------------------------------------------- */
 * {
   margin: 0;
   padding: 0;
@@ -17,12 +11,8 @@ body {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   color: #2086b1;
-  background-color: #f5f5dc;
 }
 
-/* ---------------------------------------------------------------------------
-   HEADER Y NAVBAR
---------------------------------------------------------------------------- */
 header {
   background: #286a91;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -39,6 +29,15 @@ header {
   height: 50px;
 }
 
+.navbar-nav .nav-link {
+  color: #f8f9fa !important; /* Blanco más brillante */
+  font-weight: bold;
+}
+.navbar-nav .nav-link:hover {
+  color: #00082c !important; /* Amarillo para mejor visibilidad */
+}
+
+
 .presentacion-global {
   background: #e9ecef;
   padding: 2rem 1rem;
@@ -48,11 +47,11 @@ header {
 .presentacion-global h2 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #286a91; /* Opcional: para mantener consistencia con el color del tema */
+  color: #286a91; 
 }
 .presentacion-global p {
   font-size: 1.25rem;
-  color: #555; /* Opcional: para mejorar la legibilidad */
+  color: #555; 
 }
 
 /* ---------------------------------------------------------------------------
@@ -85,182 +84,18 @@ header {
   padding: 0 15px;
 }
 
-/* Bordes redondeados solo para estas secciones */
+
 .card-personalizada,
 .card-personalizada {
   border-radius: 15px;
   overflow: hidden;
 }
 
-/* Color más oscuro solo para los títulos de estas secciones */
+
 .titulo-personalizado {
   color: #0d47a1 !important;
 }
 
-/* ---------------------------------------------------------------------------
-   REGLAS PARA CONTENIDOS ESPECÍFICOS DEL INDEX
---------------------------------------------------------------------------- */
-.article__valores img.jesus {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto 20px;
-}
-
-.ubicacion iframe {
-  width: 100%;
-  height: 300px;
-  border: 0;
-}
-
-/* ---------------------------------------------------------------------------
-   ESTILOS PARA LA TIENDA ONLINE
---------------------------------------------------------------------------- */
-/* Estilo para la sección de introducción */
-.jumbotron {
-  background-color: #e9ecef;
-  padding: 2rem 1rem;
-  text-align: center;
-  border-radius: 15px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.jumbotron h2 {
-  color: #286a91;
-  font-family: "Rubik", sans-serif;
-  font-weight: 700;
-}
-
-.jumbotron p {
-  color: #555;
-}
-
-/* Animación y estilo para las tarjetas de productos */
-.product-card {
-  transition: transform 0.3s, box-shadow 0.3s;
-  border-radius: 15px;
-  overflow: hidden;
-  border: none;
-}
-
-.product-card:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.product-card img {
-  object-fit: cover;
-  height: 250px;
-  transition: transform 0.3s;
-  border-radius: 15px 15px 0 0;
-}
-
-.product-card:hover img {
-  transform: scale(1.1);
-}
-
-.product-card .card-title {
-  font-weight: 600;
-  font-family: "Rubik", sans-serif;
-}
-
-.product-card .card-text {
-  color: #2086b1;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-.product-card .btn {
-  transition: background-color 0.3s, color 0.3s;
-  border-radius: 50px;
-  padding: 0.5rem 1.5rem;
-}
-
-.product-card .btn:hover {
-  background-color: #fff;
-  color: #0d6efd;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.product-card .badge {
-  font-size: 0.8rem;
-  padding: 0.5em 0.75em;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* ---------------------------------------------------------------------------
-   FOOTER
---------------------------------------------------------------------------- */
-footer {
-  background: #286a91;
-  color: #fff;
-  padding: 1rem 0;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* ---------------------------------------------------------------------------
-   MEDIA QUERIES
---------------------------------------------------------------------------- */
-@media (max-width: 1024px) {
-  /* Ajustes en tablet */
-  .product-card img {
-    height: 200px;
-  }
-  /*lista de valores*/
-  .jesus {
-    width: 70%;
-    height: auto;
-  }
-
-  .article__valores {
-    flex-direction: column !important;
-  }
-
-  .lista__item {
-    width: 80% !important;
-  }
-
-  .lista__item:nth-child(even) {
-    margin-left: 0;
-  }
-
-  .lista__item:nth-child(odd) {
-    margin-right: 0;
-  }
-}
-
-@media (max-width: 550px) {
-  /* Ajustes en móvil */
-  .product-card img {
-    height: 150px;
-  }
-  .jumbotron h2 {
-    font-size: 1.8rem;
-  }
-
-  .valores__lista {
-    width: 100% !important ;
-
-  }
-  .article__info {
-    width: 100% !important ;
-  }
-
-  .article__valores {
-    flex-direction: column;
-  }
-
-  .lista__item {
-    width: 100% !important;
-    margin-right: 0 !important;
-    margin-left: 0 !important;
-  }
-}
 
 .article {
   width: 100%;
@@ -289,7 +124,6 @@ footer a {
   background-size: cover;
 }
 
-/* Estilos para la sección de información en los artículos */
 .article__info {
   width: 80%;
   text-align: center;
@@ -303,114 +137,107 @@ footer a {
   margin-bottom: 10px;
 }
 
-.article__info p {
-  font-size: 1.2rem;
-  line-height: 1.8;
+.valores{
+  background-color: rgb(150, 209, 233);
 }
 
-.jesus{
-  width: 35%;
-  height: auto;
-  object-fit: cover;
-}
-
-/* Estilos para la sección de valores */
-.article__valores {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.valores__lista {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
-}
-
-.lista__item {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  line-height: 1.6rem;
-  width: 45%;
-  height: auto;
-  padding: 25px;
+.valores-titulo {
+  margin-bottom: 2rem; /* Reducir si es necesario */
   text-align: center;
-  border-radius: 10px;
   background-color: white;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-}
-
-/*subrayado */
-.lista__item p strong {
-  position: relative;
-  display: inline-block; 
-}
-
-.lista__item p strong::after {
-  content: ""; 
-  position: absolute;
-  left: 0;
-  bottom: -2px; 
-  width: 0; 
-  height: 2px; 
-  background-color: #2086b1; 
-  transition: width 0.3s ease-in-out;
-}
-
-.lista__item:hover p strong::after {
-  width: 100%; 
-  transition: width 0.3s ease-in-out;
-}
-
-/* Animaciones para la entrada de los valores */
-.lista__item:nth-child(odd) {
-  margin-right: 300px;
-  animation-name: slideInFromLeft;
-}
-
-.lista__item:nth-child(even) {
-  margin-left: 300px;
-  animation-name: slideInFromRight;
-}
-
-/* Animaciones de deslizamiento desde la izquierda */
-@keyframes slideInFromLeft {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-/* Animaciones de deslizamiento desde la derecha */
-@keyframes slideInFromRight {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-/* Estilos para las imágenes dentro de los valores */
-.lista__item img {
-  width: 400px;
-  height: auto;
-  object-fit: cover;
+  padding: 5px;
   border-radius: 10px;
+}
+
+.valores-titulo h2 {
+  font-size: 2rem; /* Ajustar si es muy grande */
+  line-height: 1.2;
+}
+
+.valores-titulo p {
+  color: #6c757d; /* Mejor contraste si es necesario */
+  font-size: 1rem;
+}
+
+.ubicacion iframe {
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
+
+
+/* ---------------------------------------------------------------------------
+   FOOTER
+--------------------------------------------------------------------------- */
+footer {
+  background: #286a91;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo{
+  background-color: white;
+  padding: 5px;
+  border-radius: 100px;
+}
+
+/* ---------------------------------------------------------------------------
+   MEDIA QUERIES
+--------------------------------------------------------------------------- */
+@media (max-width: 1024px) {
+  .product-card img {
+    height: 200px;
+  }
+  .jesus {
+    width: 70%;
+    height: auto;
+  }
+
+  .article__valores {
+    flex-direction: column !important;
+  }
+
+  .lista__item {
+    width: 80% !important;
+  }
+
+  .lista__item:nth-child(even) {
+    margin-left: 0;
+  }
+
+  .lista__item:nth-child(odd) {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 550px) {
+  .product-card img {
+    height: 150px;
+  }
+  .jumbotron h2 {
+    font-size: 1.8rem;
+  }
+
+  .valores__lista {
+    width: 100% !important ;
+
+  }
+  .article__info {
+    width: 100% !important ;
+  }
+
+  .article__valores {
+    flex-direction: column;
+  }
+
+  .lista__item {
+    width: 100% !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
 }
