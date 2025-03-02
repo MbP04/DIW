@@ -30,13 +30,18 @@ header {
 }
 
 .navbar-nav .nav-link {
-  color: #f8f9fa !important; /* Blanco más brillante */
+  color: #f8f9fa !important; 
   font-weight: bold;
 }
-.navbar-nav .nav-link:hover {
-  color: #00082c !important; /* Amarillo para mejor visibilidad */
+
+.navbar-nav .nav-link.active {
+  color: #053358 !important; 
+  font-weight: bold;
 }
 
+.navbar-nav .nav-link:hover {
+  color: #053358 !important; 
+}
 
 .presentacion-global {
   background: #e9ecef;
@@ -67,6 +72,8 @@ header {
   min-height: 600px;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+
 }
 
 .carousel-overlay {
@@ -141,8 +148,16 @@ header {
   background-color: rgb(150, 209, 233);
 }
 
+.card-hover {
+  transition: transform 0.3s ease-in-out; 
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+}
+
 .valores-titulo {
-  margin-bottom: 2rem; /* Reducir si es necesario */
+  margin-bottom: 2rem;
   text-align: center;
   background-color: white;
   padding: 5px;
@@ -150,12 +165,12 @@ header {
 }
 
 .valores-titulo h2 {
-  font-size: 2rem; /* Ajustar si es muy grande */
+  font-size: 2rem; 
   line-height: 1.2;
 }
 
 .valores-titulo p {
-  color: #6c757d; /* Mejor contraste si es necesario */
+  color: #6c757d; 
   font-size: 1rem;
 }
 
