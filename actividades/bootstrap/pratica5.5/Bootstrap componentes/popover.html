@@ -9,11 +9,9 @@
   </head>
   <body>
     <div class="container mt-4 text-center">
-      <!-- Botón verde "Contacto" -->
       <button id="btnContacto" class="btn btn-success">Contacto</button>
     </div>
 
-    <!-- Contenedor de Toasts -->
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
       <div id="contactoToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
         <div class="toast-header">
@@ -28,7 +26,6 @@
     </div>
 
     <script>
-      // Inicializar el toast al hacer clic en el botón
       document.getElementById("btnContacto").addEventListener("click", function () {
         var contactoToast = new bootstrap.Toast(document.getElementById("contactoToast"));
         contactoToast.show();

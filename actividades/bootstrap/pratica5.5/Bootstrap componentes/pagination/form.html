@@ -10,7 +10,6 @@
     <div class="container mt-4">
       <h2>Formulario de Pedidos</h2>
       <form>
-        <!-- Nombre y Apellidos -->
         <div class="input-group mb-3">
           <span class="input-group-text">Nombre y Apellidos</span>
           <input type="text" class="form-control" placeholder="Nombre" required />
@@ -18,13 +17,11 @@
           <input type="text" class="form-control" placeholder="Apellido 2" required />
         </div>
 
-        <!-- Correo Electrónico -->
         <div class="mb-3">
           <label for="email" class="form-label">Correo Electrónico</label>
           <input type="email" class="form-control" id="email" placeholder="tuemail@example.com" required />
         </div>
 
-        <!-- Seleccionar Producto -->
         <div class="mb-3">
           <label for="producto" class="form-label">Selecciona Producto</label>
           <select class="form-select" id="producto" required>
@@ -35,25 +32,21 @@
           </select>
         </div>
 
-        <!-- Color de Envoltorio -->
         <div class="mb-3">
           <label for="colorCaja" class="form-label">Color de la Caja de Envoltorio</label>
           <input type="color" class="form-control form-control-color" id="colorCaja" value="#ff5733" required />
         </div>
 
-        <!-- Cantidad de Unidades -->
         <div class="mb-3">
           <label for="cantidad" class="form-label">Número de Unidades</label>
           <input type="range" class="form-range" id="cantidad" min="1" max="10" step="1" />
         </div>
 
-        <!-- Subir Archivo -->
         <div class="mb-3">
           <label for="archivo" class="form-label">Sube un archivo con tus datos de contacto</label>
           <input type="file" class="form-control" id="archivo" required />
         </div>
 
-        <!-- Botón de Enviar -->
         <button type="submit" class="btn btn-primary">Enviar Pedido</button>
       </form>
     </div>
